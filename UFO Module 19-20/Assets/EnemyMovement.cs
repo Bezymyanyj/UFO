@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
     public Transform[] points;
 
     public float speed = 2f;
+    public bool cycle;
 
     private Transform targetPoint;
     private int currentPoint;
@@ -30,11 +31,14 @@ public class EnemyMovement : MonoBehaviour
                 currentPoint--;
             }
         }
-        if(currentPoint >= points.Length){
+        if(currentPoint >= points.Length && !cycle){
             currentPoint = points.Length - 2;
             forward = false;
         }
-        if(currentPoint <= 0){
+        else if(currentPoint>= points.Length && cycle){
+            currentPoint = 0;
+        }
+        else if(currentPoint < 0){
             currentPoint = 1;
             forward = true;
         }
