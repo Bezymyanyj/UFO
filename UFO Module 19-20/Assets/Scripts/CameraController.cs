@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
         Transform target = player.transform;
 
         //move towards the game object that is the target
-        float step = cameraSpeed * Time.fixedDeltaTime;
+        float step = cameraSpeed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, target.position + offset, step);
     }
 }
