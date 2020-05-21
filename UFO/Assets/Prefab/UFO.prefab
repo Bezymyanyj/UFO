@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9032500741180385182}
   - component: {fileID: 1804040713172411692}
   - component: {fileID: 1804040713172411691}
+  - component: {fileID: 4039724159410536432}
   m_Layer: 0
   m_Name: RightEngine
   m_TagString: Untagged
@@ -111,6 +112,19 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!65 &4039724159410536432
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878878161770476646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4250618757239306774
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +205,7 @@ MonoBehaviour:
   LeftEngine: {fileID: 7089722439278876507}
   RightEngine: {fileID: 1804040713172411692}
   force: 20
+  rotateMultiplier: 0.5
 --- !u!1 &6649014039864424843
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +378,7 @@ GameObject:
   - component: {fileID: 3784500512242714289}
   - component: {fileID: 7089722439278876507}
   - component: {fileID: 1804040713172411693}
+  - component: {fileID: 1243617615252766578}
   m_Layer: 0
   m_Name: LeftEngine
   m_TagString: Untagged
@@ -461,3 +477,16 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!65 &1243617615252766578
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8830291438203348682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
