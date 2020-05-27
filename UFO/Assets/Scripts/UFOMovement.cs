@@ -10,19 +10,27 @@ public class UFOMovement : MonoBehaviour
     public float force = 20;
     public float rotateMultiplier = 0.5f;
 
-
+    Vector3 leftForce = Vector3.zero;
+    Vector3 rightForce = Vector3.zero;
     // Update is called once per frame
     void Update()
     {
         Vector3 minForce = Vector3.up * force * rotateMultiplier;
         Vector3 maxForce = Vector3.up * force;
 
-        Vector3 leftForce = Vector3.zero;
-        Vector3 rightForce = Vector3.zero;
+        
 
         if(Input.GetKey(KeyCode.W)){
             leftForce = maxForce;
             rightForce = maxForce;
+        }
+        else if(Input.GetKey(KeyCode.S)){
+            leftForce = -minForce;
+            rightForce = -minForce;
+        }
+        else{
+            leftForce = Vector3.zero;
+            rightForce = Vector3.zero;
         }
         if(Input.GetKey(KeyCode.A)){
             leftForce = maxForce;
@@ -33,7 +41,13 @@ public class UFOMovement : MonoBehaviour
             rightForce = maxForce;            
         }
 
+        
+    }
+
+    private void FixedUpdate()
+    {
         LeftEngine.AddRelativeForce(leftForce);
         RightEngine.AddRelativeForce(rightForce);
     }
 }
+
