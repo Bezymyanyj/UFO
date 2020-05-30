@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 1804040713172411696}
   m_Layer: 0
   m_Name: UFO
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeftEngine: {fileID: 7089722439278876507}
   RightEngine: {fileID: 1804040713172411692}
-  force: 20
+  force: 120
   rotateMultiplier: 0.5
 --- !u!1 &6649014039864424843
 GameObject:
