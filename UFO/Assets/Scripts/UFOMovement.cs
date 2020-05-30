@@ -32,6 +32,8 @@ public class UFOMovement : MonoBehaviour
             leftForce = Vector3.zero;
             rightForce = Vector3.zero;
         }
+
+        //Разделил управление по осям для удобства игрока. 
         if(Input.GetKey(KeyCode.A)){
             leftForce = maxForce;
             rightForce = minForce;            
