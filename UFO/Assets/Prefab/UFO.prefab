@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 211053461509163771}
   - component: {fileID: 2654827151863473403}
   - component: {fileID: 1804040713172411696}
+  - component: {fileID: 218318294404484787}
   m_Layer: 0
   m_Name: UFO
   m_TagString: Player
@@ -207,6 +208,19 @@ MonoBehaviour:
   RightEngine: {fileID: 1804040713172411692}
   force: 120
   rotateMultiplier: 0.5
+--- !u!114 &218318294404484787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4250618757239306774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f51d61fcc2dc9b0479b24e8ab23a5ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explotion: {fileID: 6306018059921094569}
 --- !u!1 &6649014039864424843
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,11 +577,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1097654660487406587, guid: 3abe5fc00b6db104887c840b9bb32ca9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abe5fc00b6db104887c840b9bb32ca9, type: 3}
 --- !u!4 &6148246531805820863 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1062020713275411929, guid: 3abe5fc00b6db104887c840b9bb32ca9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6624790187429034598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6306018059921094569 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 895232884132548047, guid: 3abe5fc00b6db104887c840b9bb32ca9,
     type: 3}
   m_PrefabInstance: {fileID: 6624790187429034598}
   m_PrefabAsset: {fileID: 0}
