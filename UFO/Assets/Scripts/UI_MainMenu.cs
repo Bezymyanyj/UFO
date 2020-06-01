@@ -4,23 +4,21 @@ using UnityEngine;
 
 public class UI_MainMenu : MonoBehaviour
 {
+    private string[] windowsName;
+    public GameObject[] optionWindows;
     public GameObject mainMenuWindow;
     public GameObject optionsWindow;
-    public GameObject audioWindow;
-    public GameObject videoWindow;
-    public GameObject keyWindow;
 
-    public Dictionary<string, GameObject> Windows= new Dictionary<string, GameObject>();
-
+    public Dictionary<string, GameObject> Windows = new Dictionary<string, GameObject>();
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
     /// </summary>
     void Start()
     {
-        Windows.Add("audio", audioWindow);
-        Windows.Add("video", videoWindow);
-        Windows.Add("key", keyWindow);
+        for(int i = 0; i < optionWindows.Length; i++){
+            Windows.Add(optionWindows[i].name, optionWindows[i]);
+        }
     }
     public void StartGame(){
         Messenger.Broadcast("Next_Level");
@@ -30,17 +28,17 @@ public class UI_MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void OpenOptions(){
-        mainMenuWindow.SetActive(false);
-        optionsWindow.SetActive(true);
-    }
-
     public void OpenMainMenu(){
         mainMenuWindow.SetActive(true);
         optionsWindow.SetActive(false);
     }
 
-    public void ChangeOptionWindow(string key){
+    public void OpenOptions(){
+        optionsWindow.SetActive(true);
+        mainMenuWindow.SetActive(false);
+    }
+
+    public void OpenWindow(string key){
         Windows[key].SetActive(true);
         foreach(KeyValuePair<string, GameObject> window in Windows){
             if(window.Key != key)
