@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GroundCollision : MonoBehaviour
 {
-
     /// <summary>
     /// OnCollisionEnter is called when this collider/rigidbody has begun
     /// touching another rigidbody/collider.
@@ -13,7 +12,7 @@ public class GroundCollision : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.CompareTag("Player")){
-        Managers.Level.Restart();
+            Messenger.Broadcast(GameEvent.Level_Failed);
         }
     }
 
