@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour, IGameManager
     public ManagerStatus status {get; private set;}
 
     public int CurrentLevel{get; private set;}
+    public bool IsTutorialComplete{get; set;}
 
     private bool isRestart;
     
@@ -45,11 +46,10 @@ public class LevelManager : MonoBehaviour, IGameManager
     }
 
     private IEnumerator Restart(){
-
         isRestart = true;
 
         yield return new WaitForSeconds(1);
-
+        isRestart = false;
         SceneManager.LoadScene(CurrentLevel);
     }
 

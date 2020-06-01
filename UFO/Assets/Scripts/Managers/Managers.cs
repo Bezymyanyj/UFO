@@ -20,6 +20,8 @@ public class Managers : MonoBehaviour
         startSequence.Add(Level);
 
         StartCoroutine(StartupManagers());
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     private IEnumerator StartupManagers(){
@@ -49,4 +51,5 @@ public class Managers : MonoBehaviour
         }
         Debug.Log("All managers stated up");
     }
+    
 }
