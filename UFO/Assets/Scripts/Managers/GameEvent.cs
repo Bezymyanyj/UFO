@@ -5,4 +5,5 @@ using UnityEngine;
 public static class GameEvent {   
     public const string Level_Failed = "Level_Failed";
     public const string Next_Level = "Next_Level";
+    public const string Level_Complete = "Level_Complete";
     }
