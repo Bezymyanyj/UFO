@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class UI_Time : MonoBehaviour
 {
+    public TextMeshProUGUI tmp;
+
+    private TMP_Text clock;
     private float levelTime; 
     private string testTime;
     private string levelMinute;
@@ -30,6 +35,15 @@ public class UI_Time : MonoBehaviour
         Messenger.RemoveListener("Game_Paused", SetPause);
         Messenger.RemoveListener("Game_UnPaused", SetUnPause);
     }
+    /// <summary>
+    /// Start is called on the frame when a script is enabled just before
+    /// any of the Update methods is called the first time.
+    /// </summary>
+    void Start()
+    {
+        clock = tmp.GetComponent<TMP_Text>();
+        //clock = GetComponent<TextMeshProUGUI>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -40,6 +54,7 @@ public class UI_Time : MonoBehaviour
                 GetTimeInMinutes();
                 GetTime();
                 Debug.Log(testTime);
+                clock.SetText(testTime);
             }
         }
     }
