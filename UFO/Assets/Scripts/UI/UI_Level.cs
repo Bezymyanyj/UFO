@@ -55,11 +55,13 @@ public class UI_Level : MonoBehaviour
 
     private void Pause(){
         isPause = true;
+        Messenger.Broadcast("Game_Paused");
         Time.timeScale = 0;
         pauseWindow.SetActive(true);
     }
     public void UnPause(){
         isPause = false;
+        Messenger.Broadcast("Game_UnPaused");
         Time.timeScale = 1;
         pauseWindow.SetActive(false);
     }

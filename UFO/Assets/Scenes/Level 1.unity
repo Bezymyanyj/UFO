@@ -2932,6 +2932,7 @@ GameObject:
   - component: {fileID: 178773813}
   - component: {fileID: 178773812}
   - component: {fileID: 178773814}
+  - component: {fileID: 178773815}
   m_Layer: 0
   m_Name: UI_Controller
   m_TagString: Untagged
@@ -2985,6 +2986,18 @@ MonoBehaviour:
   pauseWindow: {fileID: 2058334351}
   finishWindow: {fileID: 586652425}
   optionsWindow: {fileID: 571757716}
+--- !u!114 &178773815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178773811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd8606d5bc3bf34c89f428a134638ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &179058371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8022,7 +8035,7 @@ PrefabInstance:
     - target: {fileID: 7961543949622485945, guid: dad70c49dee17f84196333fe6af9845f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -6.2999954
+      value: -6.300003
       objectReference: {fileID: 0}
     - target: {fileID: 7961543949638987815, guid: dad70c49dee17f84196333fe6af9845f,
         type: 3}
@@ -8232,7 +8245,7 @@ PrefabInstance:
     - target: {fileID: 7961543950609725717, guid: dad70c49dee17f84196333fe6af9845f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -6.2999954
+      value: -6.300003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dad70c49dee17f84196333fe6af9845f, type: 3}

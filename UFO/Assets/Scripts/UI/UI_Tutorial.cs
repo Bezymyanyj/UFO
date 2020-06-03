@@ -10,9 +10,11 @@ public class UI_Tutorial : MonoBehaviour
     {
         if(!Managers.Level.IsTutorialComplete){
             Time.timeScale = 0;
+            Messenger.Broadcast("Game_Pause");
         }
         else{
             tutorialWindow.SetActive(false);
+            
         }
 
     }
@@ -27,5 +29,6 @@ public class UI_Tutorial : MonoBehaviour
         tutorialWindow.SetActive(false);
         Managers.Level.IsTutorialComplete = true;
         Time.timeScale = 1;
+        Messenger.Broadcast("Game_UnPause");
     }
 }
