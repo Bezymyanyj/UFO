@@ -21,7 +21,7 @@ public class UI_MainMenu : MonoBehaviour
         }
     }
     public void StartGame(){
-        Messenger.Broadcast("Next_Level");
+        Messenger.Broadcast(GameEvent.Next_Level);
     }
     public void ExitApplication(){
         Debug.Log("Quit");

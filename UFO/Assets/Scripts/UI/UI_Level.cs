@@ -52,16 +52,16 @@ public class UI_Level : MonoBehaviour
             }
         }
     }
-
+    
     private void Pause(){
         isPause = true;
-        Messenger.Broadcast("Game_Paused");
+        Messenger.Broadcast(GameEvent.Game_Paused);
         Time.timeScale = 0;
         pauseWindow.SetActive(true);
     }
     public void UnPause(){
         isPause = false;
-        Messenger.Broadcast("Game_UnPaused");
+        Messenger.Broadcast(GameEvent.Game_UnPaused);
         Time.timeScale = 1;
         pauseWindow.SetActive(false);
     }
@@ -89,7 +89,7 @@ public class UI_Level : MonoBehaviour
     }
 
     public void LoadNextLevel(){
-        Messenger.Broadcast("Next_Level");
+        Messenger.Broadcast(GameEvent.Next_Level);
     }
 
     private void LevelComplete(){

@@ -11,7 +11,8 @@ public class FinishCollider : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player")){
-            Messenger.Broadcast("Level_Complete");
+            Messenger.Broadcast(GameEvent.Level_Complete);
+            Messenger.Broadcast(GameEvent.Game_Paused);
         }
     }
 }

@@ -24,8 +24,8 @@ public class UI_Time : MonoBehaviour
     /// </summary>
     void Awake()
     {
-        Messenger.AddListener("Game_Paused", SetPause);
-        Messenger.AddListener("Game_UnPaused", SetUnPause);
+        Messenger.AddListener(GameEvent.Game_Paused, SetPause);
+        Messenger.AddListener(GameEvent.Game_UnPaused, SetUnPause);
     }
     /// <summary>
     /// This function is called when the MonoBehaviour will be destroyed.
