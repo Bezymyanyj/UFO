@@ -170,6 +170,7 @@
           <e p="Particles.cs" t="Include" />
           <e p="UFOMovement.cs" t="Include" />
           <e p="UI" t="Include">
+            <e p="UI_GamePlay.cs" t="Include" />
             <e p="UI_Level.cs" t="Include" />
             <e p="UI_MainMenu.cs" t="Include" />
             <e p="UI_Time.cs" t="Include" />
