@@ -12,7 +12,7 @@ public class UI_GamePlay : MonoBehaviour
     public Transform bottomPoint;
     public Transform topPoint;
 
-    public Image directionPointer;
+    public GameObject directionPointer;
 
     
     
