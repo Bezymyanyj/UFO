@@ -166,15 +166,18 @@
             <e p="ManagerStatus.cs" t="Include" />
             <e p="Messenger.cs" t="Include" />
             <e p="PlayerManager.cs" t="Include" />
+            <e p="SettingsManager.cs" t="Include" />
           </e>
           <e p="Particles.cs" t="Include" />
           <e p="UFOMovement.cs" t="Include" />
           <e p="UI" t="Include">
+            <e p="AudioController.cs" t="Include" />
             <e p="UI_GamePlay.cs" t="Include" />
             <e p="UI_Level.cs" t="Include" />
             <e p="UI_MainMenu.cs" t="Include" />
             <e p="UI_Time.cs" t="Include" />
             <e p="UI_Tutorial.cs" t="Include" />
+            <e p="VideoController.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
