@@ -19,12 +19,6 @@ public class UI_Tutorial : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void StartGame(){
         tutorialWindow.SetActive(false);
         Managers.Level.IsTutorialComplete = true;

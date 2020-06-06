@@ -11,6 +11,11 @@ public class UI_GamePlay : MonoBehaviour
 
     public Transform bottomPoint;
     public Transform topPoint;
+
+    public Image directionPointer;
+
+    
+    
     public void SetMaxValueOfSlider(float max)
     {
         sliderLeftEngine.maxValue = max;
@@ -31,6 +36,12 @@ public class UI_GamePlay : MonoBehaviour
     {
         float currentHigh = Mathf.Abs(high - bottomPoint.position.y);
         sliderAltimeter.value = currentHigh / (topPoint.position.y + Mathf.Abs(bottomPoint.position.y)) * 100;
+    }
+
+    public void RotateDirectionPointer(float angle)
+    {
+        Quaternion pointer = directionPointer.transform.rotation;
+        directionPointer.transform.rotation = Quaternion.Euler(pointer.x, pointer.y, angle);
     }
 }
 

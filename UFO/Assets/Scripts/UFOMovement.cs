@@ -23,7 +23,7 @@ public class UFOMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 minForce = Vector3.up * force * rotateMultiplier;
+        Vector3 minForce = Vector3.up * (force * rotateMultiplier);
         Vector3 maxForce = Vector3.up * force;
         
         if(Input.GetKey(KeyCode.W)){
@@ -58,6 +58,7 @@ public class UFOMovement : MonoBehaviour
         RightEngine.AddRelativeForce(rightForce);
         uiGame.SetValueLeftEngine(Mathf.Abs(leftForce.y));
         uiGame.SetValueRightEngine(Mathf.Abs(rightForce.y));
+        uiGame.RotateDirectionPointer(-transform.rotation.eulerAngles.x);
     }
 }
 

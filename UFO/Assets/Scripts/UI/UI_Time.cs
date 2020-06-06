@@ -53,7 +53,6 @@ public class UI_Time : MonoBehaviour
                 currentSeconds++;
                 GetTimeInMinutes();
                 GetTime();
-                Debug.Log(testTime);
                 clock.SetText(testTime);
             }
         }
