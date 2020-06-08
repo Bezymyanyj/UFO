@@ -8,16 +8,20 @@ public class Managers : MonoBehaviour
 {
     public static PlayerManager Player{get; private set;}
     public static LevelManager Level{get; private set;}
+    
+    public static ControlsManager Control { get; private set; }
 
     private List<IGameManager> startSequence;
 
     private void Awake() {
         Player = GetComponent<PlayerManager>();
         Level = GetComponent<LevelManager>();
+        Control = GetComponent<ControlsManager>();
         
         startSequence = new List<IGameManager>();
         startSequence.Add(Player);
         startSequence.Add(Level);
+        startSequence.Add(Control);
 
         StartCoroutine(StartupManagers());
 

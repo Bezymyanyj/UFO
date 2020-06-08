@@ -159,6 +159,7 @@
           <e p="FinishCollider.cs" t="Include" />
           <e p="GroundCollision.cs" t="Include" />
           <e p="Managers" t="Include">
+            <e p="ControlsManager.cs" t="Include" />
             <e p="GameEvent.cs" t="Include" />
             <e p="IGameManager.cs" t="Include" />
             <e p="LevelManager.cs" t="Include" />
@@ -172,6 +173,7 @@
           <e p="UFOMovement.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="AudioController.cs" t="Include" />
+            <e p="ControlsController.cs" t="Include" />
             <e p="UI_GamePlay.cs" t="Include" />
             <e p="UI_Level.cs" t="Include" />
             <e p="UI_MainMenu.cs" t="Include" />

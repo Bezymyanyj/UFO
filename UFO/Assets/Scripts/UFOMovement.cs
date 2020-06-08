@@ -26,11 +26,11 @@ public class UFOMovement : MonoBehaviour
         Vector3 minForce = Vector3.up * (force * rotateMultiplier);
         Vector3 maxForce = Vector3.up * force;
         
-        if(Input.GetKey(KeyCode.W)){
+        if(Input.GetKey(Managers.Control.KeyCodes["PushUp"])){
             leftForce = maxForce;
             rightForce = maxForce;
         }
-        else if(Input.GetKey(KeyCode.S)){
+        else if(Input.GetKey(Managers.Control.KeyCodes["PushDown"])){
             leftForce = -minForce;
             rightForce = -minForce;
         }
@@ -40,11 +40,11 @@ public class UFOMovement : MonoBehaviour
         }
 
         //Разделил управление по осям для удобства игрока. 
-        if(Input.GetKey(KeyCode.A)){
+        if(Input.GetKey(Managers.Control.KeyCodes["PushLeft"])){
             leftForce = maxForce;
             rightForce = minForce;            
         }
-        else if(Input.GetKey(KeyCode.D)){
+        else if(Input.GetKey(Managers.Control.KeyCodes["PushRight"])){
             leftForce = minForce;
             rightForce = maxForce;            
         }

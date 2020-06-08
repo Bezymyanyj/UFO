@@ -20,16 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8a0b4f7-9bbb-41f2-be3d-93f5b01b06c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UFO.mixer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UFO.mixer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Manager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/Options.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/Options.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +54,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/Repository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/IGameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Messenger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,6 +68,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/UIController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Modern UI Pack/Scripts/Button/ButtonManagerBasic.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -73,13 +78,17 @@
         <option value="$PROJECT_DIR$/Assets/UI_GamePlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_GamePlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MixerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" />
       </list>
     </option>
   </component>
@@ -131,7 +140,9 @@
       <workItem from="1591346704762" duration="970000" />
       <workItem from="1591347693253" duration="578000" />
       <workItem from="1591447948229" duration="2582000" />
-      <workItem from="1591458792543" duration="10428000" />
+      <workItem from="1591458792543" duration="10621000" />
+      <workItem from="1591481980463" duration="2437000" />
+      <workItem from="1591552794485" duration="5621000" />
     </task>
     <servers />
   </component>
