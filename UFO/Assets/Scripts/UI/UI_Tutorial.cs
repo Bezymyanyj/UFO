@@ -1,16 +1,47 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UI_Tutorial : MonoBehaviour
 {
     public GameObject tutorialWindow;
+
+    public TextMeshProUGUI pushUpText;
+
+    public TextMeshProUGUI pushLeftText;
+
+    public TextMeshProUGUI pushRightText;
+
+    public TextMeshProUGUI pushDownText;
+
+    private TMP_Text pushUp;
+
+    private TMP_Text pushLeft;
+
+    private TMP_Text pushRight;
+
+    private TMP_Text pushDown;
+
+    private void Awake()
+    {
+        pushUp = pushUpText.GetComponent<TMP_Text>();
+        pushLeft = pushLeftText.GetComponent<TMP_Text>();
+        pushRight = pushRightText.GetComponent<TMP_Text>();
+        pushDown = pushDownText.GetComponent<TMP_Text>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         if(!Managers.Level.IsTutorialComplete){
             Time.timeScale = 0;
             Messenger.Broadcast(GameEvent.Game_Paused);
+            pushUp.text = Managers.Settings.settings.pushUp;
+            pushLeft.text = Managers.Settings.settings.pushLeft;
+            pushRight.text = Managers.Settings.settings.pushRight;
+            pushDown.text = Managers.Settings.settings.pushDown;
         }
         else{
             tutorialWindow.SetActive(false);
