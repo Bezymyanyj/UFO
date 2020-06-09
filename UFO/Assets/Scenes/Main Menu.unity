@@ -879,6 +879,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601125085}
   m_CullTransparentMesh: 0
+--- !u!114 &602029786 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7961543949579809863, guid: dad70c49dee17f84196333fe6af9845f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7961543949006050428}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a058d8729a0602458c4c9045eeddbf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &786172976
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,106 +2744,203 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023010661}
   m_CullTransparentMesh: 0
---- !u!1 &2086164114
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2086164116}
-  - component: {fileID: 2086164115}
-  - component: {fileID: 2086164117}
-  - component: {fileID: 2086164118}
-  - component: {fileID: 2086164119}
-  m_Layer: 0
-  m_Name: UIController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2086164115
+--- !u!114 &2086164115 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4757746646008352997, guid: ef9178fc5417f984d87db955a7f048a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4757746644470597238}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086164114}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95f62b0341e97344caa2383e142828a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionWindows:
-  - {fileID: 196927326}
-  - {fileID: 1092580591}
-  - {fileID: 230550705}
-  mainMenuWindow: {fileID: 1086007287}
-  optionsWindow: {fileID: 1425298008}
---- !u!4 &2086164116
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086164114}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 180.91211, y: 227.65405, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2086164117
+--- !u!114 &2086164117 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4757746646008352995, guid: ef9178fc5417f984d87db955a7f048a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4757746644470597238}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086164114}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 838f575e6cbd1414ba7e4f33a07457dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixer: {fileID: 24100000, guid: 96fa08721f421354e8123a84cd0e3095, type: 2}
-  musicSlider: {fileID: 1229693218}
-  soundsSlider: {fileID: 281074985}
-  musicToggle: {fileID: 1119119166}
-  soundsToggle: {fileID: 576448048}
---- !u!114 &2086164118
+--- !u!114 &2086164118 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4757746646008352992, guid: ef9178fc5417f984d87db955a7f048a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4757746644470597238}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086164114}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3a165096b0a80a449708dbbde0dd4fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ResolutionDropdown: {fileID: 1923396656}
---- !u!114 &2086164119
+--- !u!114 &2086164119 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4757746646008352993, guid: ef9178fc5417f984d87db955a7f048a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4757746644470597238}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086164114}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d547882dfb034541a4a072a6daf4fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlButtons:
-  - {fileID: 596154612}
-  - {fileID: 1803036273}
-  - {fileID: 1221447776}
-  - {fileID: 1384998523}
-  optionsWindow: {fileID: 1425298008}
+--- !u!1001 &4757746644470597238
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4757746646008352992, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: resolutionDropdown
+      value: 
+      objectReference: {fileID: 1923396656}
+    - target: {fileID: 4757746646008352992, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: fullScreenToggle
+      value: 
+      objectReference: {fileID: 602029786}
+    - target: {fileID: 4757746646008352993, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: controlButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 596154612}
+    - target: {fileID: 4757746646008352993, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: controlButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1803036273}
+    - target: {fileID: 4757746646008352993, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: controlButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1221447776}
+    - target: {fileID: 4757746646008352993, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: controlButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1384998523}
+    - target: {fileID: 4757746646008352993, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: optionsWindow
+      value: 
+      objectReference: {fileID: 1425298008}
+    - target: {fileID: 4757746646008352994, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 180.91211
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757746646008352994, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 227.65405
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757746646008352994, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757746646008352994, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757746646008352994, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757746646008352994, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757746646008352994, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757746646008352994, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757746646008352994, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757746646008352994, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757746646008352994, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757746646008352995, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: musicSlider
+      value: 
+      objectReference: {fileID: 1229693218}
+    - target: {fileID: 4757746646008352995, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: soundsSlider
+      value: 
+      objectReference: {fileID: 281074985}
+    - target: {fileID: 4757746646008352995, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: musicToggle
+      value: 
+      objectReference: {fileID: 1119119166}
+    - target: {fileID: 4757746646008352995, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: soundsToggle
+      value: 
+      objectReference: {fileID: 576448048}
+    - target: {fileID: 4757746646008352996, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_Name
+      value: UIController
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757746646008352997, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: optionWindows.Array.data[0]
+      value: 
+      objectReference: {fileID: 196927326}
+    - target: {fileID: 4757746646008352997, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: optionWindows.Array.data[1]
+      value: 
+      objectReference: {fileID: 1092580591}
+    - target: {fileID: 4757746646008352997, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: optionWindows.Array.data[2]
+      value: 
+      objectReference: {fileID: 230550705}
+    - target: {fileID: 4757746646008352997, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: mainMenuWindow
+      value: 
+      objectReference: {fileID: 1086007287}
+    - target: {fileID: 4757746646008352997, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: optionsWindow
+      value: 
+      objectReference: {fileID: 1425298008}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef9178fc5417f984d87db955a7f048a2, type: 3}
 --- !u!1001 &7961543949006050428
 PrefabInstance:
   m_ObjectHideFlags: 0
