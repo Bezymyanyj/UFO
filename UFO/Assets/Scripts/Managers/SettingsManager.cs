@@ -23,7 +23,6 @@ public class SettingsManager : MonoBehaviour, IGameManager
         else
         {
             CreateSettings();
-            WriteSettings();
         }
 
         //DebugSettings();
@@ -61,6 +60,12 @@ public class SettingsManager : MonoBehaviour, IGameManager
         settings.pushDown = "S";
         settings.pushLeft = "A";
         settings.pushRight = "D";
+        
+        using (StreamWriter stream = new StreamWriter(Application.dataPath + jsonPath))
+        {
+            string json = JsonUtility.ToJson(settings);
+            stream.Write(json);
+        }
     }
 
     public Settings GetSettings()
