@@ -170,6 +170,7 @@
             <e p="SettingsManager.cs" t="Include" />
           </e>
           <e p="Particles.cs" t="Include" />
+          <e p="Settings.cs" t="Include" />
           <e p="UFOMovement.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="AudioController.cs" t="Include" />

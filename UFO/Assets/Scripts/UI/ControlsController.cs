@@ -13,7 +13,12 @@ public class ControlsController : MonoBehaviour
     private bool isActive;
     private string currentKey;
     private int currentIndex;
-    
+
+    private void Start()
+    {
+        StartCoroutine(SetButtonsText());
+    }
+
     public void ActivateSetKeyCode(string key)
     {
         currentKey = key;
@@ -24,8 +29,11 @@ public class ControlsController : MonoBehaviour
     public void SendButtonIndex(int index)
     {
         currentIndex = index;
+        controlButtons[currentIndex].normalText.text = "";
     }
     
+    
+
     void OnGUI()
     {
         if (isActive)
@@ -46,4 +54,20 @@ public class ControlsController : MonoBehaviour
             }
         }
     }
+    
+    private IEnumerator SetButtonsText()
+    {
+        yield return  new WaitForSeconds(0.1f);
+        
+        //controlButtons[0].normalText.text = Managers.Control.KeyCodes["PushUp"].ToString();
+        controlButtons[0].buttonText = Managers.Control.KeyCodes["PushUp"].ToString();
+        //controlButtons[1].normalText.text = Managers.Control.KeyCodes["PushLeft"].ToString();
+        controlButtons[1].buttonText = Managers.Control.KeyCodes["PushLeft"].ToString();
+        //controlButtons[2].normalText.text = Managers.Control.KeyCodes["PushRight"].ToString();
+        controlButtons[2].buttonText = Managers.Control.KeyCodes["PushRight"].ToString();
+        //controlButtons[3].normalText.text = Managers.Control.KeyCodes["PushDown"].ToString();
+        controlButtons[3].buttonText = Managers.Control.KeyCodes["PushDown"].ToString();
+    }
+
+    
 }

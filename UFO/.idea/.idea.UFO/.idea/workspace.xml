@@ -20,17 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8a0b4f7-9bbb-41f2-be3d-93f5b01b06c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/settings.json.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/Options.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/Options.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Manager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +53,10 @@
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MixerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GroundCollision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BEC26B5-CBC7-4715-8442-F1499E984732/cb/d9ee10b1/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Particles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Modern UI Pack/Scripts/Switch/SwitchManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/Repository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,9 +70,11 @@
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/AudioController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ManagerStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/settings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/UIController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Modern UI Pack/Scripts/Button/ButtonManagerBasic.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -79,16 +86,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_GamePlay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MixerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +120,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -143,6 +151,9 @@
       <workItem from="1591458792543" duration="10621000" />
       <workItem from="1591481980463" duration="2437000" />
       <workItem from="1591552794485" duration="5621000" />
+      <workItem from="1591577462668" duration="1775000" />
+      <workItem from="1591614618659" duration="4797000" />
+      <workItem from="1591659437243" duration="2622000" />
     </task>
     <servers />
   </component>
@@ -180,10 +191,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="479" y="91" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1591347784817" />
-    <state x="430" y="114" key="SettingsEditor" timestamp="1591348220799">
+    <state x="430" y="114" key="SettingsEditor" timestamp="1591579210811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="114" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591348220799" />
+    <state x="430" y="114" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591579210811" />
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1591459927135">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -192,9 +203,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1591316688972" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591465009213">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591661168542">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591465009213" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591661168542" />
   </component>
 </project>
