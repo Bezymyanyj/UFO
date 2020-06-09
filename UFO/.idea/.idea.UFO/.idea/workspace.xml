@@ -20,20 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8a0b4f7-9bbb-41f2-be3d-93f5b01b06c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/settings.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/UIGamePlayController.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/UIGamePlayController.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/UIOptionsController.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/UIOptionsController.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Manager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Particles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Particles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MixerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GroundCollision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BEC26B5-CBC7-4715-8442-F1499E984732/cb/d9ee10b1/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
@@ -70,7 +69,6 @@
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/AudioController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ManagerStatus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/settings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/UIController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -83,7 +81,6 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" />
         <option value="$PROJECT_DIR$/Assets/UI_GamePlay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_GamePlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" />
@@ -97,6 +94,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Particles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" />
       </list>
     </option>
   </component>
@@ -154,6 +154,7 @@
       <workItem from="1591577462668" duration="1775000" />
       <workItem from="1591614618659" duration="4797000" />
       <workItem from="1591659437243" duration="2622000" />
+      <workItem from="1591699214407" duration="2194000" />
     </task>
     <servers />
   </component>
