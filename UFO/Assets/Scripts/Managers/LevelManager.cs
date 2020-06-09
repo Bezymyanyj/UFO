@@ -53,7 +53,5 @@ public class LevelManager : MonoBehaviour, IGameManager
         SceneManager.LoadScene(CurrentLevel);
     }
 
-    private void LoadNextLevel(){
-        SceneManager.LoadScene(++CurrentLevel);
-    }
+    private void LoadNextLevel() => SceneManager.LoadScene(++CurrentLevel);
 }
