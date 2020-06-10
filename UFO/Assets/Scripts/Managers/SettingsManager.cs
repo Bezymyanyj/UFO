@@ -41,6 +41,7 @@ public class SettingsManager : MonoBehaviour, IGameManager
     public void WriteSettings()
     {
         Managers.Control.WriteKeyCodes();
+        settings.fullScreen = Screen.fullScreen;
         
         using (StreamWriter stream = new StreamWriter(Application.dataPath + jsonPath))
         {
