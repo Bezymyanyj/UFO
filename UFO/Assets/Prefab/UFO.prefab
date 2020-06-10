@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 2654827151863473403}
   - component: {fileID: 1804040713172411696}
   - component: {fileID: 218318294404484787}
+  - component: {fileID: 1195860358}
   m_Layer: 0
   m_Name: UFO
   m_TagString: Player
@@ -204,8 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e15770433bc80949ba2181e0d788ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeftEngine: {fileID: 7089722439278876507}
-  RightEngine: {fileID: 1804040713172411692}
+  leftEngine: {fileID: 7089722439278876507}
+  rightEngine: {fileID: 1804040713172411692}
   force: 120
   rotateMultiplier: 0.5
 --- !u!114 &218318294404484787
@@ -221,6 +222,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explotion: {fileID: 6306018059921094569}
+--- !u!114 &1195860358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4250618757239306774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c38e296b8dad04db680df5527a51e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderRightEngine: {fileID: 0}
+  sliderLeftEngine: {fileID: 0}
+  sliderAltimeter: {fileID: 0}
+  bottomPoint: {fileID: 0}
+  topPoint: {fileID: 0}
+  directionPointer: {fileID: 0}
 --- !u!1 &6649014039864424843
 GameObject:
   m_ObjectHideFlags: 0
