@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class UFOMovement : MonoBehaviour
 {
-    public Rigidbody LeftEngine;
-    public Rigidbody RightEngine;
+    [FormerlySerializedAs("LeftEngine")] public Rigidbody leftEngine;
+    [FormerlySerializedAs("RightEngine")] public Rigidbody rightEngine;
 
     public float force = 20;
     public float rotateMultiplier = 0.5f;
 
     private UI_GamePlay uiGame;
+    private float direction;
 
     Vector3 leftForce = Vector3.zero;
     Vector3 rightForce = Vector3.zero;
@@ -29,10 +31,12 @@ public class UFOMovement : MonoBehaviour
         if(Input.GetKey(Managers.Control.KeyCodes["PushUp"])){
             leftForce = maxForce;
             rightForce = maxForce;
+            direction = 1;
         }
         else if(Input.GetKey(Managers.Control.KeyCodes["PushDown"])){
-            leftForce = -minForce;
-            rightForce = -minForce;
+            leftForce = -maxForce;
+            rightForce = -maxForce;
+            direction = -1;
         }
         else{
             leftForce = Vector3.zero;
@@ -41,12 +45,12 @@ public class UFOMovement : MonoBehaviour
 
         //Разделил управление по осям для удобства игрока. 
         if(Input.GetKey(Managers.Control.KeyCodes["PushLeft"])){
-            leftForce = maxForce;
-            rightForce = minForce;            
+            leftForce = maxForce * direction;
+            rightForce = minForce * direction;            
         }
         else if(Input.GetKey(Managers.Control.KeyCodes["PushRight"])){
-            leftForce = minForce;
-            rightForce = maxForce;            
+            leftForce = minForce * direction;
+            rightForce = maxForce * direction;            
         }
         
         uiGame.SetValueAltimeter(transform.position.y);
@@ -54,8 +58,8 @@ public class UFOMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        LeftEngine.AddRelativeForce(leftForce);
-        RightEngine.AddRelativeForce(rightForce);
+        leftEngine.AddRelativeForce(leftForce);
+        rightEngine.AddRelativeForce(rightForce);
         uiGame.SetValueLeftEngine(Mathf.Abs(leftForce.y));
         uiGame.SetValueRightEngine(Mathf.Abs(rightForce.y));
         uiGame.RotateDirectionPointer(-transform.rotation.eulerAngles.x);
