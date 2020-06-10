@@ -30,8 +30,6 @@ public class ControlsManager : MonoBehaviour, IGameManager
         yield return new WaitForSeconds(0.05f);
         settings = Managers.Settings.settings;
         
-        Debug.Log(settings.pushUp);
-        
         KeyCodes["PushUp"] = (KeyCode) Enum.Parse(typeof(KeyCode), settings.pushUp);
         KeyCodes["PushDown"] = (KeyCode) Enum.Parse(typeof(KeyCode), settings.pushDown);
         KeyCodes["PushLeft"] = (KeyCode) Enum.Parse(typeof(KeyCode), settings.pushLeft);
