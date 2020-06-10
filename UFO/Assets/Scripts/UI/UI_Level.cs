@@ -72,6 +72,7 @@ public class UI_Level : MonoBehaviour
     }
     public void OpenMainMenu(){
         pauseWindow.SetActive(true);
+        Managers.Settings.WriteSettings();
         optionsWindow.SetActive(false);
     }
 

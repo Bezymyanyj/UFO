@@ -18,11 +18,7 @@ public class VideoController : MonoBehaviour
         SetScreenSizeUI();
     }
 
-    public void SetFullScreen()
-    {
-        Screen.fullScreen = !Screen.fullScreen;
-        Managers.Settings.settings.fullScreen = Screen.fullScreen;
-    }
+    public void SetFullScreen() => Screen.fullScreen = !Screen.fullScreen;
     
     public void SetResolution(int resolutionIndex)
     {

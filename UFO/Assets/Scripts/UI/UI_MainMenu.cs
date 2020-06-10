@@ -30,6 +30,7 @@ public class UI_MainMenu : MonoBehaviour
 
     public void OpenMainMenu(){
         mainMenuWindow.SetActive(true);
+        Managers.Settings.WriteSettings();
         optionsWindow.SetActive(false);
     }
 
