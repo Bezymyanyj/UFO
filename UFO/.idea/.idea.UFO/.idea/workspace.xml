@@ -20,24 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8a0b4f7-9bbb-41f2-be3d-93f5b01b06c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/HighOfTheLevel.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/HighOfTheLevel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Particles/CFX2_Big_Splash (No Collision).prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Particles/CFX2_Big_Splash (No Collision).prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Particles/SpawnParticle.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Particles/SpawnParticle.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpawnParticle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpawnParticle.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HighOfTheLevel.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HighOfTheLevel.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UFO.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UFO.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +39,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/SpawnParticle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MusicPlayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_GamePlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MainUiController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -105,6 +97,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/SpawnParticle.cs" />
       </list>
     </option>
   </component>
@@ -165,6 +158,7 @@
       <workItem from="1591699214407" duration="2194000" />
       <workItem from="1591701564713" duration="124000" />
       <workItem from="1591785135218" duration="4984000" />
+      <workItem from="1591832238939" duration="4599000" />
     </task>
     <servers />
   </component>
