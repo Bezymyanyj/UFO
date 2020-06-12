@@ -8,4 +8,5 @@ public static class GameEvent {
     public const string Level_Complete = "Level_Complete";
     public const string Game_Paused = "Game_Paused";
     public const string Game_UnPaused = "Game_UnPaused";
-    }
+    public const string EnemyCollision = "EnymyCollision";
+}
