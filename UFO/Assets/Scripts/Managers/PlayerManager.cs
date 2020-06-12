@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,8 +8,23 @@ public class PlayerManager : MonoBehaviour, IGameManager
     public ManagerStatus status {get; private set;}
 
     public int Score {get; private set;}
-    public int Health{get; private set;}
-    public int MaxHealth{get; private set;}
+    private int Health{get; set;}
+    private int MaxHealth{get; set;}
+
+    private const int value = -25;
+
+    private void Awake()
+    {
+        Messenger.AddListener(GameEvent.EnemyCollision, ChangeHealth);
+        Messenger.AddListener(GameEvent.Level_Failed, SetHealth);
+    }
+
+    private void OnDestroy()
+    {
+        Messenger.RemoveListener(GameEvent.EnemyCollision, ChangeHealth);
+        Messenger.RemoveListener(GameEvent.Level_Failed, SetHealth);
+    }
+
 
     public void Startup(){
         Debug.Log("Player manager starting...");
@@ -19,7 +35,7 @@ public class PlayerManager : MonoBehaviour, IGameManager
         status = ManagerStatus.Started;
     }
 
-    public void ChangeHealth(int value){
+    private void ChangeHealth(){
         Health += value;
         if(Health > MaxHealth)
         {
@@ -28,7 +44,17 @@ public class PlayerManager : MonoBehaviour, IGameManager
         else if (Health < 0){
             Health = 0;
         }
+        
+        if(Health == 0)
+            Messenger.Broadcast(GameEvent.Level_Failed);
 
         Debug.Log($"Health: {Health} / {MaxHealth}");
     }
+    
+    public void SetHealth()
+    {
+        Health = 100;
+        Debug.Log($"Health: {Health} / {MaxHealth}");
+    }
+    
 }
