@@ -20,7 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8a0b4f7-9bbb-41f2-be3d-93f5b01b06c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EnemyCollision.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EnemyCollision.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Particles/CFX4 Fire.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Particles/CFX4 Fire.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Particles/CFX_Firework_Trails_Gravity.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Particles/CFX_Firework_Trails_Gravity.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Particles/CFX_Tornado.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Particles/CFX_Tornado.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FinishParticles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/FInishPlaform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/FInishPlaform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Particles/CFX_Explosion_B_Smoke+Text.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Particles/CFX_Explosion_B_Smoke+Text.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Particles/SpawnParticle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Particles/SpawnParticle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpawnParticle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnParticle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpawnParticle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnParticle.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +51,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/SpawnParticle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnParticle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MusicPlayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_GamePlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MainUiController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/EnemyCollision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,6 +88,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/settings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Modern UI Pack/Scripts/Button/ButtonManagerBasic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FinishParticles.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -73,7 +96,6 @@
         <option value="$PROJECT_DIR$/Assets/UI_GamePlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_GamePlay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MixerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" />
@@ -90,6 +112,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/SpawnParticle.cs" />
+        <option value="$PROJECT_DIR$/Assets/FinishParticles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FinishParticles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyCollision.cs" />
       </list>
     </option>
   </component>
@@ -152,6 +179,7 @@
       <workItem from="1591785135218" duration="4984000" />
       <workItem from="1591832238939" duration="4599000" />
       <workItem from="1591837140639" duration="299000" />
+      <workItem from="1591961737176" duration="7906000" />
     </task>
     <servers />
   </component>
