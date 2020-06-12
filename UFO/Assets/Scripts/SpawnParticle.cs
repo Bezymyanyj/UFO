@@ -10,6 +10,7 @@ public class SpawnParticle : MonoBehaviour
 {
     [FormerlySerializedAs("Particle")]public GameObject particle;
 
+    public float angleEffect = 90f;
     public float delay = 1;
     public float minX = 0;
 
@@ -40,7 +41,7 @@ public class SpawnParticle : MonoBehaviour
         while (true)
         {
             randomPosition = new Vector3(position.x +Random.Range(minX, maxX), transform.position.y, position.z + Random.Range(minZ, maxZ));
-            GameObject effect = Instantiate(particle, randomPosition, Quaternion.AngleAxis(90, Vector3.right));
+            GameObject effect = Instantiate(particle, randomPosition, Quaternion.AngleAxis(angleEffect, Vector3.right));
             yield return new WaitForSeconds(delay);
             Destroy(effect);
             yield return new WaitForSeconds(delay);
