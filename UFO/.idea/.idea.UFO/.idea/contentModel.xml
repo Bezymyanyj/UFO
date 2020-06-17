@@ -7,7 +7,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="EnemyCollision.cs" t="Include" />
         <e p="JMO Assets" t="Include">
           <e p="Cartoon FX" t="Include">
             <e p="CartoonFX Free.txt" t="Include" />
@@ -156,10 +155,13 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
+          <e p="EnemyCollision.cs" t="Include" />
           <e p="EnemyMovement.cs" t="Include" />
           <e p="FinishCollider.cs" t="Include" />
           <e p="FinishParticles.cs" t="Include" />
           <e p="GroundCollision.cs" t="Include" />
+          <e p="JsonHelper.cs" t="Include" />
+          <e p="LevelRecord.cs" t="Include" />
           <e p="Managers" t="Include">
             <e p="ControlsManager.cs" t="Include" />
             <e p="GameEvent.cs" t="Include" />
@@ -172,6 +174,7 @@
             <e p="SettingsManager.cs" t="Include" />
           </e>
           <e p="Particles.cs" t="Include" />
+          <e p="RecordCollection.cs" t="Include" />
           <e p="Settings.cs" t="Include" />
           <e p="SpawnParticle.cs" t="Include" />
           <e p="UFOMovement.cs" t="Include" />
@@ -179,6 +182,7 @@
             <e p="AudioController.cs" t="Include" />
             <e p="ControlsController.cs" t="Include" />
             <e p="UI_GamePlay.cs" t="Include" />
+            <e p="UI_HPBar.cs" t="Include" />
             <e p="UI_Level.cs" t="Include" />
             <e p="UI_MainMenu.cs" t="Include" />
             <e p="UI_Time.cs" t="Include" />
