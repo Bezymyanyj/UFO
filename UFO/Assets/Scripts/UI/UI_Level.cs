@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class UI_Level : MonoBehaviour
@@ -11,8 +12,10 @@ public class UI_Level : MonoBehaviour
     public GameObject pauseWindow;
     public GameObject finishWindow;
     public GameObject optionsWindow;
-    public Dictionary<string, GameObject> Windows = new Dictionary<string, GameObject>();
+    public Dictionary<string, GameObject> windows = new Dictionary<string, GameObject>();
     private bool isPause;
+    
+    public
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -35,7 +38,7 @@ public class UI_Level : MonoBehaviour
     void Start()
     {
         for(int i = 0; i < optionWindows.Length; i++){
-            Windows.Add(optionWindows[i].name, optionWindows[i]);
+            windows.Add(optionWindows[i].name, optionWindows[i]);
         }
     }
     /// <summary>
@@ -82,8 +85,8 @@ public class UI_Level : MonoBehaviour
     }
 
     public void OpenWindow(string key){
-        Windows[key].SetActive(true);
-        foreach(KeyValuePair<string, GameObject> window in Windows){
+        windows[key].SetActive(true);
+        foreach(KeyValuePair<string, GameObject> window in windows){
             if(window.Key != key)
                 window.Value.SetActive(false);
         }

@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using UnityEngine;
 
@@ -9,14 +11,17 @@ public class SettingsManager : MonoBehaviour, IGameManager
     
     [HideInInspector]
     public Settings settings = new Settings();
-    
-    
-    private string jsonPath = "/settings.json";
+
+    [HideInInspector] public RecordCollection records = new RecordCollection();
+
+
+    private const string JsonPath = "/settings.json";
+    private const string RecordPath = "/records.json";
     
     public void Startup(){
         Debug.Log("Player manager starting...");
 
-        if (File.Exists(Application.dataPath + jsonPath))
+        if (File.Exists(Application.dataPath + JsonPath))
         {
             LoadSettings();
         }
@@ -24,17 +29,41 @@ public class SettingsManager : MonoBehaviour, IGameManager
         {
             CreateSettings();
         }
+        if(File.Exists(Application.dataPath + RecordPath))
+            LoadRecords();
+        else
+        {
+            CreateRecords();
+        }
 
         //DebugSettings();
         status = ManagerStatus.Started;
     }
 
+    private void Awake()
+    {
+        Messenger.AddListener(GameEvent.Next_Level, WriteRecords);
+    }
+
+    private void OnDisable()
+    {
+        Messenger.RemoveListener(GameEvent.Next_Level, WriteRecords);
+    }
+
     private void LoadSettings()
     {
-        using (StreamReader stream = new StreamReader(Application.dataPath + jsonPath))
+        using (StreamReader stream = new StreamReader(Application.dataPath + JsonPath))
         {
             string json = stream.ReadToEnd();
             settings = JsonUtility.FromJson<Settings>(json);
+        }
+    }
+    private void LoadRecords()
+    {
+        using (StreamReader stream = new StreamReader(Application.dataPath + RecordPath))
+        {
+            string json = stream.ReadToEnd();
+            records = JsonUtility.FromJson<RecordCollection>(json);
         }
     }
 
@@ -43,9 +72,20 @@ public class SettingsManager : MonoBehaviour, IGameManager
         Managers.Control.WriteKeyCodes();
         settings.fullScreen = Screen.fullScreen;
         
-        using (StreamWriter stream = new StreamWriter(Application.dataPath + jsonPath))
+        using (StreamWriter stream = new StreamWriter(Application.dataPath + JsonPath))
         {
             string json = JsonUtility.ToJson(settings);
+            stream.Write(json);
+        }
+    }
+    private void WriteRecords()
+    {
+        records.levelRecords[0].recordTime = Managers.Level.timeLevel["Level 1"];
+        records.levelRecords[1].recordTime = Managers.Level.timeLevel["Level 2"];
+        
+        using (StreamWriter stream = new StreamWriter(Application.dataPath + RecordPath))
+        {
+            string json = JsonUtility.ToJson(records);
             stream.Write(json);
         }
     }
@@ -62,9 +102,27 @@ public class SettingsManager : MonoBehaviour, IGameManager
         settings.pushLeft = "A";
         settings.pushRight = "D";
         
-        using (StreamWriter stream = new StreamWriter(Application.dataPath + jsonPath))
+        using (StreamWriter stream = new StreamWriter(Application.dataPath + JsonPath))
         {
             string json = JsonUtility.ToJson(settings);
+            stream.Write(json);
+        }
+    }
+
+    private void CreateRecords()
+    {
+        LevelRecord[] levelRecord = new LevelRecord[2];
+        levelRecord[0] = new LevelRecord() {levelName = "Level 1", recordTime = 666};
+        levelRecord[1] = new LevelRecord() {levelName = "Level 2", recordTime = 666};
+
+        records.collectionName = "Records";
+        records.levelRecords = levelRecord;
+        
+        string playerToJson = JsonHelper.ToJson(levelRecord, true);
+        Debug.Log(playerToJson);
+        using (StreamWriter stream = new StreamWriter(Application.dataPath + RecordPath))
+        {
+            string json = JsonUtility.ToJson(records);
             stream.Write(json);
         }
     }
@@ -82,7 +140,7 @@ public class SettingsManager : MonoBehaviour, IGameManager
         Debug.Log(settings.pushRight);
         Debug.Log(settings.fullScreen.ToString());
         Debug.Log(settings.screenSize);
-        Debug.Log(settings.musicVolume.ToString());
-        Debug.Log(settings.soundVolume.ToString());
+        Debug.Log(settings.musicVolume.ToString(CultureInfo.InvariantCulture));
+        Debug.Log(settings.soundVolume.ToString(CultureInfo.InvariantCulture));
     }
 }
