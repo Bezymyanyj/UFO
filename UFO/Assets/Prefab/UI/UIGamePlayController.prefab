@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 772290220607378193}
   - component: {fileID: 772290220607378195}
   - component: {fileID: 772290220607378194}
+  - component: {fileID: 8379649299409235555}
   m_Layer: 0
   m_Name: UIGamePlayController
   m_TagString: Untagged
@@ -46,6 +47,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialWindow: {fileID: 0}
+  pushUpText: {fileID: 0}
+  pushLeftText: {fileID: 0}
+  pushRightText: {fileID: 0}
+  pushDownText: {fileID: 0}
 --- !u!114 &772290220607378195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,3 +83,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: {fileID: 0}
+  currentTimeGui: {fileID: 0}
+  recordTimeGui: {fileID: 0}
+--- !u!114 &8379649299409235555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772290220607378198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636adb72b3c8290498faccf93a535e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpBarGroup: {fileID: 0}
+  hpBar: {fileID: 0}
