@@ -8,7 +8,15 @@ public class EnemyCollision : MonoBehaviour
 
     public ParticleSystem explosion;
 
+    private AudioSource hit;
+    
     private bool destroed;
+
+    private void Start()
+    {
+        hit = GetComponent<AudioSource>();
+    }
+
     private void OnCollisionEnter(Collision other)
     {
         Messenger.Broadcast(GameEvent.EnemyCollision);
@@ -22,6 +30,7 @@ public class EnemyCollision : MonoBehaviour
             gameObject.GetComponent<BoxCollider>().enabled = false;
             destroed = true;
             explosion.Play();
+            hit.Play();
         
             yield return  new WaitForSeconds(1);
         

@@ -11,15 +11,22 @@ public class VideoController : MonoBehaviour
     [FormerlySerializedAs("ResolutionDropdown")] public CustomDropdown resolutionDropdown;
     public SwitchManager fullScreenToggle;
 
+    private AudioSource click;
 
     private void Start()
     {
+        click = GetComponent<AudioSource>();
         SetFullSizeUI();
         SetScreenSizeUI();
     }
 
-    public void SetFullScreen() => Screen.fullScreen = !Screen.fullScreen;
-    
+    public void SetFullScreen()
+    {
+        click.Play();
+        Screen.fullScreen = !Screen.fullScreen;
+    }
+
+
     public void SetResolution(int resolutionIndex)
     {
         Managers.Settings.settings.screenSize = resolutionDropdown.dropdownItems[resolutionIndex].itemName;

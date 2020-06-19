@@ -9,11 +9,18 @@ public class Explossion : MonoBehaviour
     public ParticleSystem explosion;
     public GameObject deathBody;
     public GameObject body;
+
+    private AudioSource explosionAudio;
     /// <summary>
     /// Awake is called when the script instance is being loaded.
     /// </summary>
-    void Awake() => Messenger.AddListener("Level_Failed", OnFailed);
-    
+    void Awake()
+    {
+        explosionAudio = GetComponent<AudioSource>();
+        Messenger.AddListener("Level_Failed", OnFailed);
+    }
+
+
     /// <summary>
     /// This function is called when the MonoBehaviour will be destroyed.
     /// </summary>
@@ -23,6 +30,7 @@ public class Explossion : MonoBehaviour
         if(!isFailed){
             isFailed = true;
             explosion.Play();
+            explosionAudio.Play();
             deathBody.SetActive(true);
             body.SetActive(false);
         }

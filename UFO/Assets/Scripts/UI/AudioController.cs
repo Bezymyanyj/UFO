@@ -16,9 +16,12 @@ public class AudioController : MonoBehaviour
     public SwitchManager musicToggle;
 
     public SwitchManager soundsToggle;
+
+    private AudioSource click;
     // Start is called before the first frame update
     void Start()
     {
+        click = GetComponent<AudioSource>();
         SetAudioUI();
         musicSlider.onValueChanged.AddListener(delegate { ChangeMusicVolume(musicSlider.value); });
         soundsSlider.onValueChanged.AddListener(delegate { ChangeSoundsVolume(soundsSlider.value); });
@@ -28,11 +31,13 @@ public class AudioController : MonoBehaviour
     {
         if (turn)
         {
+            click.Play();
             mixer.SetFloat("MusicVolume", 0);
             Managers.Settings.settings.musicVolume = 0;
         }
         else
         {
+            click.Play();
             mixer.SetFloat("MusicVolume", -80);
             Managers.Settings.settings.musicVolume = -80f;
         }
@@ -42,11 +47,13 @@ public class AudioController : MonoBehaviour
     {
         if (turn)
         {
+            click.Play();
             mixer.SetFloat("SoundsVolume", 0);
             Managers.Settings.settings.soundVolume = 0;
         }
         else
         {
+            click.Play();
             mixer.SetFloat("SoundsVolume", -80);
             Managers.Settings.settings.soundVolume = -80f;
         }
@@ -60,6 +67,7 @@ public class AudioController : MonoBehaviour
 
     private void ChangeSoundsVolume(float volume)
     {
+        if(!click.isPlaying) click.Play();
         mixer.SetFloat("SoundsVolume", volume);
         Managers.Settings.settings.soundVolume = volume;
     }

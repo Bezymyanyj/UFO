@@ -14,13 +14,16 @@ public class ControlsController : MonoBehaviour
     private string currentKey;
     private int currentIndex;
 
+    private AudioSource click;
     private void Start()
     {
+        click = GetComponent<AudioSource>();
         StartCoroutine(SetButtonsText());
     }
 
     public void ActivateSetKeyCode(string key)
     {
+        click.Play();
         currentKey = key;
         isActive = true;
         optionsWindow.GetComponent<CanvasGroup>().interactable = false;

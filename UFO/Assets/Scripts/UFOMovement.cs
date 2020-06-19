@@ -14,6 +14,8 @@ public class UFOMovement : MonoBehaviour
     private UI_GamePlay uiGame;
     private float direction;
 
+    public AudioSource engineAudio;
+
     Vector3 leftForce = Vector3.zero;
     Vector3 rightForce = Vector3.zero;
 
@@ -32,11 +34,13 @@ public class UFOMovement : MonoBehaviour
             leftForce = maxForce;
             rightForce = maxForce;
             direction = 1;
+            if(!engineAudio.isPlaying) engineAudio.Play();
         }
         else if(Input.GetKey(Managers.Control.KeyCodes["PushDown"])){
             leftForce = -maxForce;
             rightForce = -maxForce;
             direction = -1;
+            if(!engineAudio.isPlaying) engineAudio.Play();
         }
         else{
             leftForce = Vector3.zero;
@@ -46,11 +50,18 @@ public class UFOMovement : MonoBehaviour
         //Разделил управление по осям для удобства игрока. 
         if(Input.GetKey(Managers.Control.KeyCodes["PushLeft"])){
             leftForce = maxForce * direction;
-            rightForce = minForce * direction;            
+            rightForce = minForce * direction;   
+            if(!engineAudio.isPlaying) engineAudio.Play();
         }
         else if(Input.GetKey(Managers.Control.KeyCodes["PushRight"])){
             leftForce = minForce * direction;
-            rightForce = maxForce * direction;            
+            rightForce = maxForce * direction;
+            if(!engineAudio.isPlaying) engineAudio.Play();
+        }
+
+        if (leftForce == Vector3.zero && rightForce == Vector3.zero)
+        {
+            engineAudio.Stop();
         }
         
         uiGame.SetValueAltimeter(transform.position.y);
