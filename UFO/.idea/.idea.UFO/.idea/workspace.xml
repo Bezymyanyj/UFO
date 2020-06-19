@@ -20,19 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8a0b4f7-9bbb-41f2-be3d-93f5b01b06c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Kenney Assets/frameLowTile.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Kenney Assets/frameLowTile.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/frameLowTile.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/frameLowTile.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Final Title 3.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Final Title 3.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/DeathBody.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/DeathBody.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/FInishPlaform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/FInishPlaform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/records.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/records.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UFO.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UFO.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Particles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Explossion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Particles.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Explossion.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +54,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GroundCollision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BEC26B5-CBC7-4715-8442-F1499E984732/cb/d9ee10b1/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Particles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Explossion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Modern UI Pack/Scripts/Switch/SwitchManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" root0="FORCE_HIGHLIGHTING" />
@@ -98,7 +93,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Particles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" />
@@ -119,6 +113,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Particles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Explossion.cs" />
       </list>
     </option>
   </component>
@@ -187,6 +183,7 @@
       <workItem from="1592164787702" duration="6658000" />
       <workItem from="1592347179210" duration="8192000" />
       <workItem from="1592476299746" duration="1253000" />
+      <workItem from="1592563233580" duration="1029000" />
     </task>
     <servers />
   </component>

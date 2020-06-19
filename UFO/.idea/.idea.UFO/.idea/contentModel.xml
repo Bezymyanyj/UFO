@@ -157,6 +157,7 @@
           <e p="CameraController.cs" t="Include" />
           <e p="EnemyCollision.cs" t="Include" />
           <e p="EnemyMovement.cs" t="Include" />
+          <e p="Explossion.cs" t="Include" />
           <e p="FinishCollider.cs" t="Include" />
           <e p="FinishParticles.cs" t="Include" />
           <e p="GroundCollision.cs" t="Include" />
@@ -173,7 +174,6 @@
             <e p="PlayerManager.cs" t="Include" />
             <e p="SettingsManager.cs" t="Include" />
           </e>
-          <e p="Particles.cs" t="Include" />
           <e p="RecordCollection.cs" t="Include" />
           <e p="Settings.cs" t="Include" />
           <e p="SpawnParticle.cs" t="Include" />
