@@ -20,31 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8a0b4f7-9bbb-41f2-be3d-93f5b01b06c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JsonHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JsonHelper.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelRecord.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RecordCollection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_HPBar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_HPBar.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/records.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/records.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Kenney Assets/frameLowTile.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Kenney Assets/frameLowTile.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/frameLowTile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/frameLowTile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Final Title 3.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Final Title 3.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyCollision.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyCollision.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyCollision.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UFO.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UFO.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/UIGamePlayController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/UIGamePlayController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/UILevel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/UILevel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/UIOptionsController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/UIOptionsController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/FInishPlaform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/FInishPlaform.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/records.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/records.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +118,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelRecord.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" />
       </list>
     </option>
   </component>
@@ -197,6 +186,7 @@
       <workItem from="1592157837350" duration="1864000" />
       <workItem from="1592164787702" duration="6658000" />
       <workItem from="1592347179210" duration="8192000" />
+      <workItem from="1592476299746" duration="1253000" />
     </task>
     <servers />
   </component>
@@ -246,9 +236,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1591316688972" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592347578012">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592476975406">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592347578012" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592476975406" />
   </component>
 </project>
