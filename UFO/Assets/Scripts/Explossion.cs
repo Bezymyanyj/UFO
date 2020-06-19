@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class Particles : MonoBehaviour
+public class Explossion : MonoBehaviour
 {
     private bool isFailed;
-    public ParticleSystem explotion;
+    public ParticleSystem explosion;
+    public GameObject deathBody;
+    public GameObject body;
     /// <summary>
     /// Awake is called when the script instance is being loaded.
     /// </summary>
@@ -19,7 +22,9 @@ public class Particles : MonoBehaviour
     private void OnFailed(){
         if(!isFailed){
             isFailed = true;
-            explotion.Play();
+            explosion.Play();
+            deathBody.SetActive(true);
+            body.SetActive(false);
         }
     }
 }
