@@ -20,14 +20,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8a0b4f7-9bbb-41f2-be3d-93f5b01b06c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/DeathBody.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/DeathBody.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SoundSource.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/Desert canyon quiet, light birds and wind, large reverb_160821_006.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/InterfaceBleepGlitch-11.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/Interior_Tones_31.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/Metal_Hit_Crash_199.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/birds_outside_002_wide.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/collect_item_hurry_out_of_time_01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/deep-relaxation-preview-by-kevin-macleod-from-filmmusic-io.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/explosion_large_no_tail_03.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/vintage_radio_button_006.wav.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/FInishPlaform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/FInishPlaform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Manager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/UFO.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UFO.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Particles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Explossion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Particles.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Explossion.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyCollision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Explossion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Explossion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,14 +108,9 @@
         <option value="$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MixerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/SpawnParticle.cs" />
         <option value="$PROJECT_DIR$/Assets/FinishParticles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FinishParticles.cs" />
@@ -112,9 +125,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelRecord.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Particles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Explossion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyCollision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" />
       </list>
     </option>
   </component>
@@ -184,6 +203,8 @@
       <workItem from="1592347179210" duration="8192000" />
       <workItem from="1592476299746" duration="1253000" />
       <workItem from="1592563233580" duration="1029000" />
+      <workItem from="1592607265212" duration="64000" />
+      <workItem from="1592607379070" duration="2813000" />
     </task>
     <servers />
   </component>
