@@ -13107,6 +13107,11 @@ PrefabInstance:
       propertyPath: optionsWindow
       value: 
       objectReference: {fileID: 1886460250}
+    - target: {fileID: 4757746646008352997, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9178fc5417f984d87db955a7f048a2, type: 3}
 --- !u!114 &402728517 stripped
@@ -13152,7 +13157,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 402728516}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95f62b0341e97344caa2383e142828a8, type: 3}
   m_Name: 

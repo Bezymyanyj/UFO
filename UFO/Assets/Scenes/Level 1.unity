@@ -17895,6 +17895,11 @@ PrefabInstance:
       propertyPath: optionWindows.Array.data[2]
       value: 
       objectReference: {fileID: 571757718}
+    - target: {fileID: 4757746646008352997, guid: ef9178fc5417f984d87db955a7f048a2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3009440409563059535, guid: ef9178fc5417f984d87db955a7f048a2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef9178fc5417f984d87db955a7f048a2, type: 3}
@@ -25365,6 +25370,11 @@ PrefabInstance:
       propertyPath: optionsWindow
       value: 
       objectReference: {fileID: 571757716}
+    - target: {fileID: 772290220607378195, guid: de18fa04599f13640ac7c46d8ae09f7a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 772290220607378198, guid: de18fa04599f13640ac7c46d8ae09f7a,
         type: 3}
       propertyPath: m_Name
