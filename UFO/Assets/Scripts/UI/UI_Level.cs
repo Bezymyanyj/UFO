@@ -15,6 +15,8 @@ public class UI_Level : MonoBehaviour
     public GameObject optionsWindow;
     public Dictionary<string, GameObject> windows = new Dictionary<string, GameObject>();
     private bool isPause;
+
+    private AudioSource click;
     
 
     /// <summary>
@@ -33,6 +35,7 @@ public class UI_Level : MonoBehaviour
     /// </summary>
     void Start()
     {
+        click = GetComponent<AudioSource>();
         for(int i = 0; i < optionWindows.Length; i++){
             windows.Add(optionWindows[i].name, optionWindows[i]);
         }
@@ -70,12 +73,14 @@ public class UI_Level : MonoBehaviour
         Application.Quit();
     }
     public void OpenMainMenu(){
+        click.Play();
         pauseWindow.SetActive(true);
         Managers.Settings.WriteSettings();
         optionsWindow.SetActive(false);
     }
 
     public void OpenOptions(){
+        click.Play();
         optionsWindow.SetActive(true);
         pauseWindow.SetActive(false);
     }
@@ -85,6 +90,7 @@ public class UI_Level : MonoBehaviour
     /// <param name="key">Имя меню</param>
     public void OpenWindow(string key)
     {
+        click.Play();
         windows[key].SetActive(true);
         foreach (var window in windows.Where(window => window.Key != key))
         {

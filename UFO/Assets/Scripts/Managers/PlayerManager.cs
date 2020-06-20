@@ -11,7 +11,7 @@ public class PlayerManager : MonoBehaviour, IGameManager
     private int Health{get; set;}
     private int MaxHealth{get; set;}
     
-    public int value = -25; //Величина урона
+    private int value = -25; //Величина урона
 
     private void Awake()
     {

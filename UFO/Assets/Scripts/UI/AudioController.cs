@@ -23,6 +23,7 @@ public class AudioController : MonoBehaviour
     {
         click = GetComponent<AudioSource>();
         SetAudioUI();
+        SetVolume();
         musicSlider.onValueChanged.AddListener(delegate { ChangeMusicVolume(musicSlider.value); });
         soundsSlider.onValueChanged.AddListener(delegate { ChangeSoundsVolume(soundsSlider.value); });
     }
@@ -95,6 +96,7 @@ public class AudioController : MonoBehaviour
     {
         musicSlider.value = Managers.Settings.settings.musicVolume;
         soundsSlider.value = Managers.Settings.settings.soundVolume;
+        
         if (Managers.Settings.settings.musicVolume == -80f)
         {
             musicToggle.isOn = false;
@@ -111,5 +113,11 @@ public class AudioController : MonoBehaviour
         {
             soundsToggle.isOn = true;
         }
+    }
+
+    private void SetVolume()
+    {
+        mixer.SetFloat("MusicVolume", Managers.Settings.settings.musicVolume);
+        mixer.SetFloat("SoundVolume", Managers.Settings.settings.soundVolume);
     }
 }

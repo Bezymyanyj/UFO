@@ -24,12 +24,15 @@ public class UI_Tutorial : MonoBehaviour
 
     private TMP_Text pushDown;
 
+    private AudioSource click;
+
     private void Awake()
     {
         pushUp = pushUpText.GetComponent<TMP_Text>();
         pushLeft = pushLeftText.GetComponent<TMP_Text>();
         pushRight = pushRightText.GetComponent<TMP_Text>();
         pushDown = pushDownText.GetComponent<TMP_Text>();
+        click = GetComponent<AudioSource>();
     }
 
     // Start is called before the first frame update
@@ -51,6 +54,7 @@ public class UI_Tutorial : MonoBehaviour
     }
 
     public void StartGame(){
+        click.Play();
         tutorialWindow.SetActive(false);
         Managers.Level.IsTutorialComplete = true;
         Time.timeScale = 1;

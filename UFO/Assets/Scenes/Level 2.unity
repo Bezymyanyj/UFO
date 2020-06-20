@@ -13110,7 +13110,7 @@ PrefabInstance:
     - target: {fileID: 4757746646008352997, guid: ef9178fc5417f984d87db955a7f048a2,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9178fc5417f984d87db955a7f048a2, type: 3}
@@ -13157,7 +13157,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 402728516}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95f62b0341e97344caa2383e142828a8, type: 3}
   m_Name: 
@@ -56665,6 +56665,16 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 135938268559174047, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+        type: 3}
+      propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 885174983}
+    - target: {fileID: 135938268559174047, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+        type: 3}
+      propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitApplication
+      objectReference: {fileID: 0}
     - target: {fileID: 135938268736906618, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -56694,6 +56704,16 @@ PrefabInstance:
         type: 3}
       propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SendButtonIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 135938268881623416, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+        type: 3}
+      propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 885174983}
+    - target: {fileID: 135938268881623416, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+        type: 3}
+      propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnPause
       objectReference: {fileID: 0}
     - target: {fileID: 135938268910316029, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
         type: 3}
@@ -57074,6 +57094,16 @@ PrefabInstance:
         type: 3}
       propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SendButtonIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 135938270162195266, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+        type: 3}
+      propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 885174983}
+    - target: {fileID: 135938270162195266, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+        type: 3}
+      propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenOptions
       objectReference: {fileID: 0}
     - target: {fileID: 135938270196483521, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
         type: 3}
