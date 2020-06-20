@@ -28,6 +28,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UFO.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UFO.mixer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/records.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/records.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/settings.json" afterDir="false" />
     </list>
@@ -191,7 +192,7 @@
       <workItem from="1592607379070" duration="2813000" />
       <workItem from="1592668504869" duration="650000" />
       <workItem from="1592671510405" duration="6939000" />
-      <workItem from="1592684544198" duration="2711000" />
+      <workItem from="1592684544198" duration="2956000" />
     </task>
     <servers />
   </component>
