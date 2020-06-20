@@ -155,13 +155,17 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
+          <e p="Collection" t="Include">
+            <e p="LevelRecord.cs" t="Include" />
+            <e p="RecordCollection.cs" t="Include" />
+            <e p="Settings.cs" t="Include" />
+          </e>
           <e p="EnemyCollision.cs" t="Include" />
           <e p="EnemyMovement.cs" t="Include" />
           <e p="Explossion.cs" t="Include" />
           <e p="FinishCollider.cs" t="Include" />
           <e p="FinishParticles.cs" t="Include" />
           <e p="GroundCollision.cs" t="Include" />
-          <e p="LevelRecord.cs" t="Include" />
           <e p="Managers" t="Include">
             <e p="ControlsManager.cs" t="Include" />
             <e p="IGameManager.cs" t="Include" />
@@ -175,8 +179,6 @@
             <e p="GameEvent.cs" t="Include" />
             <e p="Messenger.cs" t="Include" />
           </e>
-          <e p="RecordCollection.cs" t="Include" />
-          <e p="Settings.cs" t="Include" />
           <e p="SpawnParticle.cs" t="Include" />
           <e p="UFOMovement.cs" t="Include" />
           <e p="UI" t="Include">

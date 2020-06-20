@@ -20,31 +20,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8a0b4f7-9bbb-41f2-be3d-93f5b01b06c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/SoundSource.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/Desert canyon quiet, light birds and wind, large reverb_160821_006.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/InterfaceBleepGlitch-11.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/Interior_Tones_31.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/Metal_Hit_Crash_199.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/birds_outside_002_wide.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/collect_item_hurry_out_of_time_01.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/deep-relaxation-preview-by-kevin-macleod-from-filmmusic-io.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/explosion_large_no_tail_03.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SoundSource/vintage_radio_button_006.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Collection.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Collection/LevelRecord.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Collection/LevelRecord.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Collection/RecordCollection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Collection/RecordCollection.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Collection/Settings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Collection/Settings.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UFO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/FInishPlaform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/FInishPlaform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Manager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UFO.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UFO.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyCollision.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Explossion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Explossion.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishParticles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FinishParticles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GroundCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GroundCollision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelRecord.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelRecord.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/IGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/IGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MessengerSystem/GameEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MessengerSystem/GameEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RecordCollection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RecordCollection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnParticle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnParticle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_GamePlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_GamePlay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_HPBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_HPBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +72,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnParticle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MusicPlayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RecordCollection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_HPBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_GamePlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MainUiController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -67,6 +79,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MessengerSystem/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MixerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GroundCollision.cs" root0="FORCE_HIGHLIGHTING" />
@@ -84,56 +97,56 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/IGameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/records.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Messenger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/AudioController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ManagerStatus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JsonHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/UIController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelRecord.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/settings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Modern UI Pack/Scripts/Button/ButtonManagerBasic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FinishParticles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MessengerSystem/Messenger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/UI_GamePlay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_GamePlay.cs" />
         <option value="$PROJECT_DIR$/../../../Runner/Runner_Module_13_18/Assets/Scripts/MixerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Managers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Tutorial.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/SpawnParticle.cs" />
         <option value="$PROJECT_DIR$/Assets/FinishParticles.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FinishParticles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/EnemyCollision.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_HPBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JsonHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RecordCollection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelRecord.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Particles.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ControlsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/IGameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SettingsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MessengerSystem/GameEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/AudioController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ControlsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_GamePlay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_HPBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI_Time.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/VideoController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Explossion.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyCollision.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UFOMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FinishCollider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FinishParticles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnParticle.cs" />
       </list>
     </option>
   </component>
@@ -205,6 +218,8 @@
       <workItem from="1592563233580" duration="1029000" />
       <workItem from="1592607265212" duration="64000" />
       <workItem from="1592607379070" duration="2813000" />
+      <workItem from="1592668504869" duration="650000" />
+      <workItem from="1592671510405" duration="6939000" />
     </task>
     <servers />
   </component>
