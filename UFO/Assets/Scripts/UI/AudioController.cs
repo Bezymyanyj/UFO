@@ -27,6 +27,10 @@ public class AudioController : MonoBehaviour
         soundsSlider.onValueChanged.AddListener(delegate { ChangeSoundsVolume(soundsSlider.value); });
     }
 
+    /// <summary>
+    /// Выключаем включаем музыку
+    /// </summary>
+    /// <param name="turn"></param>
     public void TurnMusic(bool turn)
     {
         if (turn)
@@ -43,6 +47,10 @@ public class AudioController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Выключаем включаем звуки
+    /// </summary>
+    /// <param name="turn"></param>
     public void TurnSounds(bool turn)
     {
         if (turn)
@@ -59,12 +67,20 @@ public class AudioController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Изменяем громкость музыки слайдером
+    /// </summary>
+    /// <param name="volume"></param>
     private void ChangeMusicVolume(float volume)
     {
         mixer.SetFloat("MusicVolume", volume);
         Managers.Settings.settings.musicVolume = volume;
     }
 
+    /// <summary>
+    /// Изменяем громкость звуков слайдером
+    /// </summary>
+    /// <param name="volume"></param>
     private void ChangeSoundsVolume(float volume)
     {
         if(!click.isPlaying) click.Play();
@@ -72,6 +88,9 @@ public class AudioController : MonoBehaviour
         Managers.Settings.settings.soundVolume = volume;
     }
 
+    /// <summary>
+    /// Устанавливаем элементы интерфейса в правильное положение на старте,согласно настройкам пользователя
+    /// </summary>
     private void SetAudioUI()
     {
         musicSlider.value = Managers.Settings.settings.musicVolume;

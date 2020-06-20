@@ -37,7 +37,7 @@ public class UI_Tutorial : MonoBehaviour
     {
         if(!Managers.Level.IsTutorialComplete){
             Time.timeScale = 0;
-            Messenger.Broadcast(GameEvent.Game_Paused);
+            Messenger.Broadcast(GameEvent.GamePaused);
             pushUp.text = $"Press: {Managers.Settings.settings.pushUp}";
             pushLeft.text = $"Press: {Managers.Settings.settings.pushLeft}";
             pushRight.text = $"Press: {Managers.Settings.settings.pushRight}";
@@ -54,6 +54,6 @@ public class UI_Tutorial : MonoBehaviour
         tutorialWindow.SetActive(false);
         Managers.Level.IsTutorialComplete = true;
         Time.timeScale = 1;
-        Messenger.Broadcast(GameEvent.Game_UnPaused);
+        Messenger.Broadcast(GameEvent.GameUnPaused);
     }
 }

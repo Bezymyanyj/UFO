@@ -30,12 +30,6 @@ public class SpawnParticle : MonoBehaviour
         StartCoroutine(CreateParticle(delay));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private IEnumerator CreateParticle(float delay)
     {
         while (true)

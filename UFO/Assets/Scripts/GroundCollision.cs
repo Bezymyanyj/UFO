@@ -12,7 +12,7 @@ public class GroundCollision : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.CompareTag("Player")){
-            Messenger.Broadcast(GameEvent.Level_Failed);
+            Messenger.Broadcast(GameEvent.LevelFailed);
         }
     }
 

@@ -5,24 +5,24 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour, IGameManager
 {
-    public ManagerStatus status {get; private set;}
+    public ManagerStatus Status {get; private set;}
 
     public int Score {get; private set;}
     private int Health{get; set;}
     private int MaxHealth{get; set;}
-
-    public int value = -25;
+    
+    public int value = -25; //Величина урона
 
     private void Awake()
     {
         Messenger.AddListener(GameEvent.EnemyCollision, ChangeHealth);
-        Messenger.AddListener(GameEvent.Level_Failed, SetHealth);
+        Messenger.AddListener(GameEvent.LevelFailed, SetHealth);
     }
 
     private void OnDestroy()
     {
         Messenger.RemoveListener(GameEvent.EnemyCollision, ChangeHealth);
-        Messenger.RemoveListener(GameEvent.Level_Failed, SetHealth);
+        Messenger.RemoveListener(GameEvent.LevelFailed, SetHealth);
     }
 
 
@@ -32,7 +32,7 @@ public class PlayerManager : MonoBehaviour, IGameManager
         Health = 100;
         MaxHealth = 100;
 
-        status = ManagerStatus.Started;
+        Status = ManagerStatus.Started;
     }
 
     private void ChangeHealth(){
@@ -46,15 +46,13 @@ public class PlayerManager : MonoBehaviour, IGameManager
         }
         
         if(Health == 0)
-            Messenger.Broadcast(GameEvent.Level_Failed);
+            Messenger.Broadcast(GameEvent.LevelFailed);
 
-        Debug.Log($"Health: {Health} / {MaxHealth}");
+        // Debug.Log($"Health: {Health} / {MaxHealth}");
     }
-    
-    public void SetHealth()
-    {
-        Health = 100;
-        Debug.Log($"Health: {Health} / {MaxHealth}");
-    }
-    
+
+    /// <summary>
+    /// Востанавливаем здоровье на рестарте
+    /// </summary>
+    private void SetHealth() => Health = 100;
 }

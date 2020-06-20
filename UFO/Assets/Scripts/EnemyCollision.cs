@@ -25,17 +25,15 @@ public class EnemyCollision : MonoBehaviour
 
     private IEnumerator DestroyEnemy()
     {
-        if (!destroed)
-        {
-            gameObject.GetComponent<BoxCollider>().enabled = false;
-            destroed = true;
-            explosion.Play();
-            hit.Play();
+        if (destroed) yield break;
+        gameObject.GetComponent<BoxCollider>().enabled = false;
+        destroed = true;
+        explosion.Play();
+        hit.Play();
         
-            yield return  new WaitForSeconds(1);
+        yield return  new WaitForSeconds(1);
         
-            Destroy(gameObject);
-        }
-        
+        Destroy(gameObject);
+
     }
 }

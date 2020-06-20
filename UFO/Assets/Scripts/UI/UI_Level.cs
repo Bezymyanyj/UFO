@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -15,22 +16,17 @@ public class UI_Level : MonoBehaviour
     public Dictionary<string, GameObject> windows = new Dictionary<string, GameObject>();
     private bool isPause;
     
-    public
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
     /// </summary>
-    void Awake()
-    {
-        Messenger.AddListener("Level_Complete", LevelComplete);
-    }
+    void Awake() => Messenger.AddListener(GameEvent.LevelComplete, LevelComplete);
+
     /// <summary>
     /// This function is called when the MonoBehaviour will be destroyed.
     /// </summary>
-    void OnDestroy()
-    {
-        Messenger.RemoveListener("Level_Complete", LevelComplete);
-    }
+    void OnDestroy() => Messenger.RemoveListener(GameEvent.LevelComplete, LevelComplete);
+
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
@@ -58,13 +54,13 @@ public class UI_Level : MonoBehaviour
     
     private void Pause(){
         isPause = true;
-        Messenger.Broadcast(GameEvent.Game_Paused);
+        Messenger.Broadcast(GameEvent.GamePaused);
         Time.timeScale = 0;
         pauseWindow.SetActive(true);
     }
     public void UnPause(){
         isPause = false;
-        Messenger.Broadcast(GameEvent.Game_UnPaused);
+        Messenger.Broadcast(GameEvent.GameUnPaused);
         Time.timeScale = 1;
         pauseWindow.SetActive(false);
     }
@@ -83,20 +79,20 @@ public class UI_Level : MonoBehaviour
         optionsWindow.SetActive(true);
         pauseWindow.SetActive(false);
     }
-
-    public void OpenWindow(string key){
+    /// <summary>
+    /// Открывает вкладки настроек
+    /// </summary>
+    /// <param name="key">Имя меню</param>
+    public void OpenWindow(string key)
+    {
         windows[key].SetActive(true);
-        foreach(KeyValuePair<string, GameObject> window in windows){
-            if(window.Key != key)
-                window.Value.SetActive(false);
+        foreach (var window in windows.Where(window => window.Key != key))
+        {
+            window.Value.SetActive(false);
         }
     }
 
-    public void LoadNextLevel(){
-        Messenger.Broadcast(GameEvent.Next_Level);
-    }
+    public void LoadNextLevel() => Messenger.Broadcast(GameEvent.NextLevel);
 
-    private void LevelComplete(){
-        finishWindow.SetActive(true);
-    }
+    private void LevelComplete() => finishWindow.SetActive(true);
 }

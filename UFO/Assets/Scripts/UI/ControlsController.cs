@@ -21,6 +21,10 @@ public class ControlsController : MonoBehaviour
         StartCoroutine(SetButtonsText());
     }
 
+    /// <summary>
+    /// Активируем смену управления
+    /// </summary>
+    /// <param name="key"></param>
     public void ActivateSetKeyCode(string key)
     {
         click.Play();
@@ -29,14 +33,21 @@ public class ControlsController : MonoBehaviour
         optionsWindow.GetComponent<CanvasGroup>().interactable = false;
     }
 
+    /// <summary>
+    /// Отправляем индекс кнопки для смены текста кнопки
+    /// </summary>
+    /// <param name="index"></param>
     public void SendButtonIndex(int index)
     {
         currentIndex = index;
         controlButtons[currentIndex].normalText.text = "";
     }
     
-    
-
+    /// <summary>
+    /// Ивент меняющий управление
+    /// при нажатии Escape отменяем
+    /// иначе устанавливается новая кнопка управления
+    /// </summary>
     void OnGUI()
     {
         if (isActive)
@@ -58,17 +69,17 @@ public class ControlsController : MonoBehaviour
         }
     }
     
+    /// <summary>
+    /// Устанавливаем текст кнопок управленияна старте игры из настроек пользователя
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator SetButtonsText()
     {
         yield return  new WaitForSeconds(0.1f);
         
-        //controlButtons[0].normalText.text = Managers.Control.KeyCodes["PushUp"].ToString();
         controlButtons[0].buttonText = Managers.Control.KeyCodes["PushUp"].ToString();
-        //controlButtons[1].normalText.text = Managers.Control.KeyCodes["PushLeft"].ToString();
         controlButtons[1].buttonText = Managers.Control.KeyCodes["PushLeft"].ToString();
-        //controlButtons[2].normalText.text = Managers.Control.KeyCodes["PushRight"].ToString();
         controlButtons[2].buttonText = Managers.Control.KeyCodes["PushRight"].ToString();
-        //controlButtons[3].normalText.text = Managers.Control.KeyCodes["PushDown"].ToString();
         controlButtons[3].buttonText = Managers.Control.KeyCodes["PushDown"].ToString();
     }
 

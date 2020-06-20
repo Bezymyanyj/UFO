@@ -17,9 +17,9 @@ public class VideoController : MonoBehaviour
     {
         click = GetComponent<AudioSource>();
         SetFullSizeUI();
-        SetScreenSizeUI();
+        //SetScreenSizeUI();
     }
-
+    
     public void SetFullScreen()
     {
         click.Play();
@@ -38,16 +38,19 @@ public class VideoController : MonoBehaviour
         Screen.SetResolution(width, height, Screen.fullScreen);
     }
 
-    private void SetScreenSizeUI()
-    {
-        int resolutionIndex = Managers.Settings.settings.resolutionIndex;
-        
-        int width = int.Parse(resolutionDropdown.dropdownItems[resolutionIndex].itemName.Split('x')[0]);
-        int height = int.Parse(resolutionDropdown.dropdownItems[resolutionIndex].itemName.Split('x')[1]);
-
-        //Set correct resolution?? needs Tests
-    }
-
+    // private void SetScreenSizeUI()
+    // {
+    //     int resolutionIndex = Managers.Settings.settings.resolutionIndex;
+    //     
+    //     int width = int.Parse(resolutionDropdown.dropdownItems[resolutionIndex].itemName.Split('x')[0]);
+    //     int height = int.Parse(resolutionDropdown.dropdownItems[resolutionIndex].itemName.Split('x')[1]);
+    //
+    //     //Set correct resolution?? needs Tests
+    // }
+    
+    /// <summary>
+    /// Устанавливаем тогле на старте в правильное положение
+    /// </summary>
     private void SetFullSizeUI()
     {
         Screen.fullScreen = Managers.Settings.settings.fullScreen;

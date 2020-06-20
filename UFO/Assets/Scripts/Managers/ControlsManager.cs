@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ControlsManager : MonoBehaviour, IGameManager
 {
-    public ManagerStatus status {get; private set;}
+    public ManagerStatus Status {get; private set;}
 
     public Dictionary<string, KeyCode> KeyCodes = new Dictionary<string, KeyCode>()
     {
@@ -22,9 +22,14 @@ public class ControlsManager : MonoBehaviour, IGameManager
 
         StartCoroutine(LoadKeyCodes());
         
-        status = ManagerStatus.Started;
+        Status = ManagerStatus.Started;
     }
 
+    /// <summary>
+    /// Загружаем управление  пользователя из файла
+    /// Загружаем чуть позже так как данные берем из другога манеджера и он моэет загрузится раньше.
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator LoadKeyCodes()
     {
         yield return new WaitForSeconds(0.05f);
@@ -35,7 +40,10 @@ public class ControlsManager : MonoBehaviour, IGameManager
         KeyCodes["PushLeft"] = (KeyCode) Enum.Parse(typeof(KeyCode), settings.pushLeft);
         KeyCodes["PushRight"] = (KeyCode) Enum.Parse(typeof(KeyCode), settings.pushRight);
     }
-
+    
+    /// <summary>
+    /// Выводим имя кнопок контроля в интерфейс настроек
+    /// </summary>
     public void WriteKeyCodes()
     {
         settings.pushUp = KeyCodes["PushUp"].ToString();

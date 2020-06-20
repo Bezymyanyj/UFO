@@ -30,18 +30,18 @@ public class UI_Time : MonoBehaviour
     /// </summary>
     void Awake()
     {
-        Messenger.AddListener(GameEvent.Game_Paused, SetPause);
-        Messenger.AddListener(GameEvent.Game_UnPaused, SetUnPause);
-        Messenger.AddListener(GameEvent.Level_Complete, SetTime);
+        Messenger.AddListener(GameEvent.GamePaused, SetPause);
+        Messenger.AddListener(GameEvent.GameUnPaused, SetUnPause);
+        Messenger.AddListener(GameEvent.LevelComplete, SetTime);
     }
     /// <summary>
     /// This function is called when the MonoBehaviour will be destroyed.
     /// </summary>
     void OnDestroy()
     {
-        Messenger.RemoveListener("Game_Paused", SetPause);
-        Messenger.RemoveListener("Game_UnPaused", SetUnPause);
-        Messenger.RemoveListener(GameEvent.Level_Complete, SetTime);
+        Messenger.RemoveListener(GameEvent.GamePaused, SetPause);
+        Messenger.RemoveListener(GameEvent.GameUnPaused, SetUnPause);
+        Messenger.RemoveListener(GameEvent.LevelComplete, SetTime);
     }
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
@@ -70,11 +70,18 @@ public class UI_Time : MonoBehaviour
             }
         }
     }
-
+    /// <summary>
+    /// Переводим время в минуты и секунды
+    /// </summary>
+    /// <param name="sec">Время</param>
     private void GetTimeInMinutes(float sec){
         minutes = (int)Mathf.Floor(sec/60);
         seconds = (int) (sec - minutes*60);
     }
+    /// <summary>
+    /// Переводим время в строку
+    /// </summary>
+    /// <returns>Время уровня</returns>
     private string GetTime(){
         levelMinute = minutes < 10 ? $"0{minutes}" : $"{minutes}";
         levelSeconds = seconds < 10 ? $"0{seconds}" : $"{seconds}";
@@ -82,14 +89,12 @@ public class UI_Time : MonoBehaviour
         return testTime;
     }
 
-    private void SetPause(){
-        isPaused = true;
-    }
+    private void SetPause() => isPaused = true;
 
-    private void SetUnPause(){
-        isPaused = false;
-    }
-
+    private void SetUnPause() => isPaused = false;
+    /// <summary>
+    /// Выводим рекорд уровня в конце уровня
+    /// </summary>
     private void SetTime()
     {
         currentTime.SetText("Level complete by: " + clock.text);

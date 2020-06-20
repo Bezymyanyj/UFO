@@ -6,46 +6,40 @@ using UnityEngine.Serialization;
 
 public class LevelManager : MonoBehaviour, IGameManager
 {
-    public ManagerStatus status {get; private set;}
+    public ManagerStatus Status {get; private set;}
 
-    public int CurrentLevel{get; private set;}
     public bool IsTutorialComplete{get; set;}
-
-    private bool isRestart;
-
     public float CurrentRecord { get; set; }
+    
     public Dictionary<string, float> timeLevel = new Dictionary<string, float>();
     
+    private int сurrentLevel;
+    private bool isRestart;
     
     public void Startup(){
         Debug.Log("Player manager starting...");
 
-        CurrentLevel = SceneManager.GetActiveScene().buildIndex;
+        сurrentLevel = SceneManager.GetActiveScene().buildIndex;
 
         isRestart = false;
         
         StartCoroutine(AddSceneRecords());
 
-        status = ManagerStatus.Started;
+        Status = ManagerStatus.Started;
     }
-
-    /// <summary>
-    /// Awake is called when the script instance is being loaded.
-    /// </summary>
     void Awake()
     {
-        Messenger.AddListener("Level_Failed", OnFailed);
-        Messenger.AddListener("Next_Level", LoadNextLevel);
+        Messenger.AddListener(GameEvent.LevelFailed, OnFailed);
+        Messenger.AddListener(GameEvent.NextLevel, LoadNextLevel);
     }
-    /// <summary>
-    /// This function is called when the MonoBehaviour will be destroyed.
-    /// </summary>
     void OnDestroy()
     {
-        Messenger.RemoveListener("Level_Failed", OnFailed);
-        Messenger.RemoveListener("Next_Level", LoadNextLevel);
+        Messenger.RemoveListener(GameEvent.LevelFailed, OnFailed);
+        Messenger.RemoveListener(GameEvent.NextLevel, LoadNextLevel);
     }
 
+    #region Restart
+    
     private void OnFailed(){
         if(!isRestart){
             StartCoroutine(Restart());
@@ -57,14 +51,16 @@ public class LevelManager : MonoBehaviour, IGameManager
 
         yield return new WaitForSeconds(1);
         isRestart = false;
-        SceneManager.LoadScene(CurrentLevel);
+        SceneManager.LoadScene(сurrentLevel);
     }
+    #endregion
 
-    private void LoadNextLevel()
-    {
-        SceneManager.LoadScene(++CurrentLevel);
-    }
+    private void LoadNextLevel() => SceneManager.LoadScene(++сurrentLevel);
 
+    /// <summary>
+    /// Загруаем текущие рекорды уровней на старте игры
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator AddSceneRecords()
     {
         yield return new WaitForSeconds(0.1f);

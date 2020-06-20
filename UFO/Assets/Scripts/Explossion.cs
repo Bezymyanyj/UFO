@@ -17,22 +17,22 @@ public class Explossion : MonoBehaviour
     void Awake()
     {
         explosionAudio = GetComponent<AudioSource>();
-        Messenger.AddListener("Level_Failed", OnFailed);
+        Messenger.AddListener(GameEvent.LevelFailed, OnFailed);
     }
 
 
     /// <summary>
     /// This function is called when the MonoBehaviour will be destroyed.
     /// </summary>
-    void OnDestroy() => Messenger.RemoveListener("Level_Failed", OnFailed);
+    void OnDestroy() => Messenger.RemoveListener(GameEvent.LevelFailed, OnFailed);
     
-    private void OnFailed(){
-        if(!isFailed){
-            isFailed = true;
-            explosion.Play();
-            explosionAudio.Play();
-            deathBody.SetActive(true);
-            body.SetActive(false);
-        }
+    private void OnFailed()
+    {
+        if (isFailed) return;
+        isFailed = true;
+        explosion.Play();
+        explosionAudio.Play();
+        deathBody.SetActive(true);
+        body.SetActive(false);
     }
 }

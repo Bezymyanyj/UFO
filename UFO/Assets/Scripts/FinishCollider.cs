@@ -20,11 +20,9 @@ public class FinishCollider : MonoBehaviour
     /// <param name="other">The other Collider involved in this collision.</param>
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
-        {
-            finishAudio.Play();
-            Messenger.Broadcast(GameEvent.Level_Complete);
-            Messenger.Broadcast(GameEvent.Game_Paused);
-        }
+        if (!other.CompareTag("Player")) return;
+        finishAudio.Play();
+        Messenger.Broadcast(GameEvent.LevelComplete);
+        Messenger.Broadcast(GameEvent.GamePaused);
     }
 }

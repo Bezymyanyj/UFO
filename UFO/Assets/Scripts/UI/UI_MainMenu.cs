@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class UI_MainMenu : MonoBehaviour
@@ -26,7 +27,7 @@ public class UI_MainMenu : MonoBehaviour
     }
     public void StartGame(){
         click.Play();
-        Messenger.Broadcast(GameEvent.Next_Level);
+        Messenger.Broadcast(GameEvent.NextLevel);
     }
     public void ExitApplication(){
         click.Play();
@@ -46,15 +47,17 @@ public class UI_MainMenu : MonoBehaviour
         optionsWindow.SetActive(true);
         mainMenuWindow.SetActive(false);
     }
-
-    public void OpenWindow(string key){
+    /// <summary>
+    /// Открывает вкладки настроек
+    /// </summary>
+    /// <param name="key">Имя меню</param>
+    public void OpenWindow(string key)
+    {
         Windows[key].SetActive(true);
-        foreach(KeyValuePair<string, GameObject> window in Windows){
-            if (window.Key != key)
-            {
-                window.Value.SetActive(false);
-                click.Play();
-            }
+        foreach (var window in Windows.Where(window => window.Key != key))
+        {
+            window.Value.SetActive(false);
+            click.Play();
         }
     }
 }

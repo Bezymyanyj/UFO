@@ -7,10 +7,9 @@ using UnityEngine;
 
 public class SettingsManager : MonoBehaviour, IGameManager
 {
-    public ManagerStatus status {get; private set;}
+    public ManagerStatus Status {get; private set;}
     
-    [HideInInspector]
-    public Settings settings = new Settings();
+    [HideInInspector] public Settings settings = new Settings();
 
     [HideInInspector] public RecordCollection records = new RecordCollection();
 
@@ -21,6 +20,7 @@ public class SettingsManager : MonoBehaviour, IGameManager
     public void Startup(){
         Debug.Log("Player manager starting...");
 
+        // Загружаем настройки
         if (File.Exists(Application.dataPath + JsonPath))
         {
             LoadSettings();
@@ -29,6 +29,7 @@ public class SettingsManager : MonoBehaviour, IGameManager
         {
             CreateSettings();
         }
+        // Загружаем рекорды
         if(File.Exists(Application.dataPath + RecordPath))
             LoadRecords();
         else
@@ -37,18 +38,12 @@ public class SettingsManager : MonoBehaviour, IGameManager
         }
 
         //DebugSettings();
-        status = ManagerStatus.Started;
+        Status = ManagerStatus.Started;
     }
 
-    private void Awake()
-    {
-        Messenger.AddListener(GameEvent.Next_Level, WriteRecords);
-    }
+    private void Awake() => Messenger.AddListener(GameEvent.NextLevel, WriteRecords);
 
-    private void OnDisable()
-    {
-        Messenger.RemoveListener(GameEvent.Next_Level, WriteRecords);
-    }
+    private void OnDisable() => Messenger.RemoveListener(GameEvent.NextLevel, WriteRecords);
 
     private void LoadSettings()
     {
@@ -89,7 +84,9 @@ public class SettingsManager : MonoBehaviour, IGameManager
             stream.Write(json);
         }
     }
-
+    /// <summary>
+    /// Настройки по умолчанию
+    /// </summary>
     private void CreateSettings()
     {
         settings.musicVolume = 0;
@@ -109,6 +106,9 @@ public class SettingsManager : MonoBehaviour, IGameManager
         }
     }
 
+    /// <summary>
+    /// Рекорды по умолчанию
+    /// </summary>
     private void CreateRecords()
     {
         LevelRecord[] levelRecord = new LevelRecord[2];
@@ -126,11 +126,16 @@ public class SettingsManager : MonoBehaviour, IGameManager
             stream.Write(json);
         }
     }
+    
+    /// <summary>
+    /// Метод возврощат экземпляр настроек
+    /// </summary>
+    /// <returns></returns>
+    public Settings GetSettings() => settings;
 
-    public Settings GetSettings()
-    {
-        return settings;
-    }
+    #region Console Log
+
+    
 
     public void DebugSettings()
     {
@@ -143,4 +148,5 @@ public class SettingsManager : MonoBehaviour, IGameManager
         Debug.Log(settings.musicVolume.ToString(CultureInfo.InvariantCulture));
         Debug.Log(settings.soundVolume.ToString(CultureInfo.InvariantCulture));
     }
+    #endregion
 }

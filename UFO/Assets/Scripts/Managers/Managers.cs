@@ -45,7 +45,7 @@ public class Managers : MonoBehaviour
             numReady = 0;
 
             foreach(IGameManager manager in startSequence){
-                if(manager.status == ManagerStatus.Started){
+                if(manager.Status == ManagerStatus.Started){
                     numReady++;
                 }
             }
