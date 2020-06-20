@@ -117,9 +117,9 @@ public class SettingsManager : MonoBehaviour, IGameManager
 
         records.collectionName = "Records";
         records.levelRecords = levelRecord;
-        
-        string playerToJson = JsonHelper.ToJson(levelRecord, true);
-        Debug.Log(playerToJson);
+        //
+        // string playerToJson = JsonHelper.ToJson(levelRecord, true);
+        // Debug.Log(playerToJson);
         using (StreamWriter stream = new StreamWriter(Application.dataPath + RecordPath))
         {
             string json = JsonUtility.ToJson(records);
