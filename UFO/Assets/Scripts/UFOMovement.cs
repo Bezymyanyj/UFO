@@ -10,19 +10,20 @@ public class UFOMovement : MonoBehaviour
 
     public float force = 20;
     public float rotateMultiplier = 0.5f;
+    public AudioSource engineAudio;
 
     private UI_GamePlay uiGame;
     private float direction;
 
-    public AudioSource engineAudio;
+    private Vector3 leftForce = Vector3.zero;
+    private Vector3 rightForce = Vector3.zero;
 
-    Vector3 leftForce = Vector3.zero;
-    Vector3 rightForce = Vector3.zero;
-
+    private Rigidbody rb;
     void Awake()
     {
         uiGame = GetComponent<UI_GamePlay>();
         uiGame.SetMaxValueOfSlider(force);
+        rb = GetComponent<Rigidbody>();
     }
     // Update is called once per frame
     void Update()
@@ -73,7 +74,8 @@ public class UFOMovement : MonoBehaviour
         rightEngine.AddRelativeForce(rightForce);
         uiGame.SetValueLeftEngine(Mathf.Abs(leftForce.y));
         uiGame.SetValueRightEngine(Mathf.Abs(rightForce.y));
-        uiGame.RotateDirectionPointer(-transform.rotation.eulerAngles.x);
+        //uiGame.RotateDirectionPointer(-transform.rotation.eulerAngles.x);
+        uiGame.DirectionUfo(rb.velocity);
     }
 }
 

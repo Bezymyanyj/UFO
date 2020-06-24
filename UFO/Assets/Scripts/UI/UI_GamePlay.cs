@@ -13,6 +13,9 @@ public class UI_GamePlay : MonoBehaviour
     public Transform topPoint;
 
     public GameObject directionPointer;
+    public GameObject pointer;
+
+    public float scale = 1;
 
     /// <summary>
     /// Максимальная "мощность" слайдера
@@ -53,7 +56,13 @@ public class UI_GamePlay : MonoBehaviour
     public void RotateDirectionPointer(float angle)
     {
         Quaternion pointer = directionPointer.transform.rotation;
-        directionPointer.transform.rotation = Quaternion.Euler(pointer.x, pointer.y, angle);
+        directionPointer.transform.rotation = Quaternion.Euler(pointer.eulerAngles.x, pointer.eulerAngles.y, angle);
+        
+    }
+
+    public void DirectionUfo(Vector3 Ufo)
+    {
+        pointer.transform.position += Ufo * scale;
     }
 }
 
