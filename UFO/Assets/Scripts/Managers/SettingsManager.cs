@@ -75,8 +75,8 @@ public class SettingsManager : MonoBehaviour, IGameManager
     }
     private void WriteRecords()
     {
-        records.levelRecords[0].recordTime = Managers.Level.timeLevel["Level 1"];
-        records.levelRecords[1].recordTime = Managers.Level.timeLevel["Level 2"];
+        records.levelRecords[0].recordTime = Managers.Level.timeLevel["1_Level 1"];
+        records.levelRecords[1].recordTime = Managers.Level.timeLevel["2_Level 2"];
         
         using (StreamWriter stream = new StreamWriter(Application.dataPath + RecordPath))
         {
@@ -112,8 +112,8 @@ public class SettingsManager : MonoBehaviour, IGameManager
     private void CreateRecords()
     {
         LevelRecord[] levelRecord = new LevelRecord[2];
-        levelRecord[0] = new LevelRecord() {levelName = "Level 1", recordTime = 666};
-        levelRecord[1] = new LevelRecord() {levelName = "Level 2", recordTime = 666};
+        levelRecord[0] = new LevelRecord() {levelName = "1_Level 1", recordTime = 666};
+        levelRecord[1] = new LevelRecord() {levelName = "2_Level 2", recordTime = 666};
 
         records.collectionName = "Records";
         records.levelRecords = levelRecord;

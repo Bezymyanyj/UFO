@@ -62,7 +62,19 @@ public class UI_GamePlay : MonoBehaviour
 
     public void DirectionUfo(Vector3 Ufo)
     {
-        pointer.transform.position += Ufo * scale;
+        Vector3 pointerPosition = Ufo;
+
+        RectTransform pointRt = (RectTransform) pointer.transform;
+
+        pointRt.anchoredPosition = pointerPosition * scale;
+
+        RectTransform arrowRT = (RectTransform) directionPointer.transform;
+
+        Vector3 direction = (pointRt.position - arrowRT.position).normalized;
+        
+        float angle = Mathf.Atan2(pointRt.position.y-arrowRT.position.y, pointRt.position.x-arrowRT.position.x)*180 / Mathf.PI;
+
+        arrowRT.rotation = Quaternion.Euler(0,0,angle - 90);
     }
 }
 

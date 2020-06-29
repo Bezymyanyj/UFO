@@ -118,6 +118,6 @@ public class AudioController : MonoBehaviour
     private void SetVolume()
     {
         mixer.SetFloat("MusicVolume",  Managers.Settings.settings.musicVolume);
-        mixer.SetFloat("SoundVolume", Managers.Settings.settings.soundVolume);
+        mixer.SetFloat("SoundsVolume", Managers.Settings.settings.soundVolume);
     }
 }

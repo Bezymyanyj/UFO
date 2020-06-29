@@ -384,7 +384,7 @@ MonoBehaviour:
   topPoint: {fileID: 0}
   directionPointer: {fileID: 0}
   pointer: {fileID: 0}
-  scale: 0.01
+  scale: 2
 --- !u!114 &5533815686158298485
 MonoBehaviour:
   m_ObjectHideFlags: 0

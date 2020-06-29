@@ -65553,7 +65553,7 @@ PrefabInstance:
       objectReference: {fileID: 1886460260}
     - target: {fileID: 1195860358, guid: e55d33cebdde9524a80322b01e74a55c, type: 3}
       propertyPath: scale
-      value: 0.01
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3601991134115208006, guid: e55d33cebdde9524a80322b01e74a55c,
         type: 3}

@@ -9,8 +9,8 @@ using UnityEngine.SceneManagement;
 public class UI_Time : MonoBehaviour
 {
     public TextMeshProUGUI tmp;
-    [FormerlySerializedAs("currentTimeGUI")] public TextMeshProUGUI currentTimeGui;
-    [FormerlySerializedAs("recordTimeGUI")] public TextMeshProUGUI recordTimeGui;
+    public TextMeshProUGUI currentTimeGui;
+    public TextMeshProUGUI recordTimeGui;
 
     private TMP_Text clock;
     private TMP_Text currentTime;

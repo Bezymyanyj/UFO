@@ -12105,12 +12105,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ca1450a98425224b83d9611deb30c4c, type: 3}
---- !u!1 &1106231114 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 135938269880080989, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
-    type: 3}
-  m_PrefabInstance: {fileID: 135938268787827991}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1107574308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24548,6 +24542,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -318.44446
       objectReference: {fileID: 0}
+    - target: {fileID: 1877042629, guid: cec03f98ca37fa44d8d17a5727f5d2c5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 135938268559174035, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -24573,6 +24571,11 @@ PrefabInstance:
       propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 178773814}
+    - target: {fileID: 135938268601538472, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 135938268736906618, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -24623,6 +24626,11 @@ PrefabInstance:
       propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 178773814}
+    - target: {fileID: 135938269094097489, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.654361
+      objectReference: {fileID: 0}
     - target: {fileID: 135938269208706673, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
         type: 3}
       propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -24833,6 +24841,21 @@ PrefabInstance:
       propertyPath: buttonEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 178773812}
+    - target: {fileID: 135938269880080988, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 135938269880080989, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 135938269880080989, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Arrow
+      objectReference: {fileID: 0}
     - target: {fileID: 135938269920503498, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -25067,6 +25090,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -470
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793323690529381418, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 8043399421818066505, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
         type: 3}
@@ -25494,6 +25522,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &135938268787827994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 135938269880080989, guid: cec03f98ca37fa44d8d17a5727f5d2c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 135938268787827991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &241251636926117489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26452,14 +26486,14 @@ PrefabInstance:
     - target: {fileID: 1195860358, guid: e55d33cebdde9524a80322b01e74a55c, type: 3}
       propertyPath: directionPointer
       value: 
-      objectReference: {fileID: 1106231114}
+      objectReference: {fileID: 135938268787827994}
     - target: {fileID: 1195860358, guid: e55d33cebdde9524a80322b01e74a55c, type: 3}
       propertyPath: pointer
       value: 
       objectReference: {fileID: 1877042626}
     - target: {fileID: 1195860358, guid: e55d33cebdde9524a80322b01e74a55c, type: 3}
       propertyPath: scale
-      value: 0.02
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3601991134115208006, guid: e55d33cebdde9524a80322b01e74a55c,
         type: 3}
